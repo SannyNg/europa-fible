@@ -1,0 +1,531 @@
+/* ================================================
+   Chapter Page Styles
+   ================================================ */
+
+/* Country Info Section */
+.country-info {
+    background: var(--bg-secondary);
+    padding: var(--space-xl) 0;
+    border-bottom: 1px solid var(--bg-tertiary);
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--space-md);
+}
+
+.info-item {
+    padding: var(--space-sm);
+}
+
+/* Full Width Plant Cards */
+.plant-card-full {
+    background: var(--bg-primary);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+    margin-bottom: var(--space-2xl);
+}
+
+.plant-card-full .plant-image {
+    height: 800px;
+}
+
+.plant-card-full .plant-info {
+    padding: var(--space-xl);
+}
+
+.plant-card-full h2 {
+    color: var(--color-primary-dark);
+    margin-bottom: var(--space-xs);
+}
+
+.plant-local {
+    color: var(--text-light);
+    font-size: 0.95rem;
+    margin-bottom: var(--space-lg);
+}
+
+.plant-warning {
+    background: linear-gradient(135deg, #fff3cd 0%, #ffeeba 100%);
+    padding: var(--space-md);
+    border-radius: var(--radius-md);
+    border-left: 4px solid var(--color-warning);
+    margin-top: var(--space-md);
+    font-size: 0.9rem;
+}
+
+/* Chapter Navigation */
+.chapter-nav {
+    background: var(--bg-primary);
+    border-bottom: 1px solid var(--bg-tertiary);
+    padding: var(--space-md) 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.chapter-nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.back-link {
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+    color: var(--color-primary);
+    font-weight: 600;
+    transition: transform var(--transition-fast);
+}
+
+.back-link:hover {
+    transform: translateX(-5px);
+}
+
+.chapter-progress {
+    color: var(--text-light);
+    font-size: 0.9rem;
+}
+
+/* Chapter Hero */
+.chapter-hero {
+    padding: var(--space-3xl) 0;
+    text-align: center;
+    color: var(--text-inverse);
+}
+
+.chapter-plants-hero {
+    background: linear-gradient(135deg, #27ae60 0%, #1e8449 100%);
+}
+
+.chapter-hero-content {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.chapter-icon-large {
+    font-size: 5rem;
+    margin-bottom: var(--space-lg);
+}
+
+.chapter-hero h1 {
+    color: var(--text-inverse);
+    font-size: 3rem;
+    margin-bottom: var(--space-md);
+}
+
+.chapter-intro {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+/* Chapter Warning */
+.chapter-warning {
+    background: var(--color-warning);
+    color: var(--text-inverse);
+    padding: var(--space-md) 0;
+}
+
+.chapter-warning .container {
+    display: flex;
+    align-items: center;
+    gap: var(--space-md);
+}
+
+.chapter-warning p {
+    margin: 0;
+}
+
+/* Table of Contents */
+.toc {
+    background: var(--bg-secondary);
+    padding: var(--space-xl) 0;
+    border-bottom: 1px solid var(--bg-tertiary);
+}
+
+.toc h2 {
+    font-size: 1.2rem;
+    margin-bottom: var(--space-md);
+}
+
+.toc-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--space-sm) var(--space-xl);
+    padding-left: var(--space-lg);
+}
+
+.toc-list a {
+    color: var(--text-secondary);
+}
+
+.toc-list a:hover {
+    color: var(--color-primary);
+}
+
+/* Content Sections */
+.chapter-content {
+    padding: var(--space-2xl) 0;
+}
+
+.content-section {
+    margin-bottom: var(--space-3xl);
+    padding-bottom: var(--space-2xl);
+    border-bottom: 2px solid var(--bg-tertiary);
+}
+
+.content-section h2 {
+    color: var(--color-primary-dark);
+    margin-bottom: var(--space-md);
+}
+
+.section-intro {
+    font-size: 1.1rem;
+    color: var(--text-secondary);
+    margin-bottom: var(--space-xl);
+}
+
+/* Plant Cards */
+.plant-grid {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2xl);
+    margin-bottom: var(--space-xl);
+}
+
+.plant-card {
+    background: var(--bg-primary);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+    transition: transform var(--transition-normal);
+}
+
+.plant-card:hover {
+    transform: translateY(-4px);
+}
+
+.plant-image {
+    height: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background: linear-gradient(135deg, #f5f5f5 0%, #e8e8e8 100%);
+}
+
+.plant-photo {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    padding: var(--space-sm);
+    transition: transform var(--transition-normal);
+}
+
+.plant-card:hover .plant-photo {
+    transform: scale(1.05);
+}
+
+.plant-emoji {
+    font-size: 4rem;
+}
+
+.plant-image-kamille {
+    background: linear-gradient(135deg, #fffde7, #fff9c4);
+}
+
+.plant-image-spitzwegerich {
+    background: linear-gradient(135deg, #e8f5e9, #c8e6c9);
+}
+
+.plant-image-schafgarbe {
+    background: linear-gradient(135deg, #fce4ec, #f8bbd9);
+}
+
+.plant-image-brennnessel {
+    background: linear-gradient(135deg, #f1f8e9, #dcedc8);
+}
+
+.plant-info {
+    padding: var(--space-lg);
+}
+
+.plant-info h3 {
+    margin-bottom: var(--space-xs);
+}
+
+.plant-latin {
+    font-style: italic;
+    color: var(--text-light);
+    font-size: 0.9rem;
+    margin-bottom: var(--space-md);
+}
+
+.plant-section {
+    margin-bottom: var(--space-md);
+}
+
+.plant-section h4 {
+    font-size: 0.9rem;
+    color: var(--color-primary);
+    margin-bottom: var(--space-xs);
+}
+
+.plant-section ul {
+    padding-left: var(--space-lg);
+    margin: 0;
+}
+
+.plant-section li {
+    font-size: 0.9rem;
+    margin-bottom: var(--space-xs);
+}
+
+.plant-section p {
+    font-size: 0.9rem;
+    margin: 0 0 var(--space-xs);
+}
+
+.plant-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-xs);
+    margin-top: var(--space-md);
+}
+
+.tag {
+    font-size: 0.75rem;
+    padding: 0.2rem 0.5rem;
+    border-radius: var(--radius-sm);
+}
+
+.tag-safe {
+    background: #d4edda;
+    color: #155724;
+}
+
+.tag-common {
+    background: #cce5ff;
+    color: #004085;
+}
+
+.tag-essential {
+    background: #fff3cd;
+    color: #856404;
+}
+
+.tag-spring {
+    background: #f8d7da;
+    color: #721c24;
+}
+
+/* Quick Reference Table */
+.quick-reference {
+    background: var(--bg-secondary);
+    padding: var(--space-xl);
+    border-radius: var(--radius-lg);
+}
+
+.quick-reference h3 {
+    margin-bottom: var(--space-md);
+}
+
+.reference-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.reference-table th,
+.reference-table td {
+    padding: var(--space-sm) var(--space-md);
+    text-align: left;
+    border-bottom: 1px solid var(--bg-tertiary);
+}
+
+.reference-table th {
+    background: var(--color-primary);
+    color: var(--text-inverse);
+}
+
+.reference-table tr:hover {
+    background: var(--bg-tertiary);
+}
+
+/* Berry Grid */
+.berry-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: var(--space-md);
+    margin-bottom: var(--space-xl);
+}
+
+.berry-card {
+    background: var(--bg-primary);
+    padding: var(--space-lg);
+    border-radius: var(--radius-md);
+    text-align: center;
+    box-shadow: var(--shadow-sm);
+    border-left: 4px solid var(--color-success);
+}
+
+.berry-emoji {
+    font-size: 3rem;
+    display: block;
+    margin-bottom: var(--space-sm);
+}
+
+.berry-card h3 {
+    font-size: 1rem;
+    margin-bottom: var(--space-xs);
+}
+
+.berry-card p {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    margin: 0;
+}
+
+/* Danger Boxes */
+.danger-box {
+    background: linear-gradient(135deg, #ffebee 0%, #ffcdd2 100%);
+    padding: var(--space-xl);
+    border-radius: var(--radius-lg);
+    border: 2px solid var(--color-danger);
+}
+
+.danger-box h3 {
+    color: var(--color-danger);
+    margin-bottom: var(--space-md);
+}
+
+.danger-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: var(--space-md);
+}
+
+.danger-item {
+    background: rgba(255, 255, 255, 0.7);
+    padding: var(--space-md);
+    border-radius: var(--radius-sm);
+}
+
+/* Poison Cards */
+.poison-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--space-lg);
+    margin-bottom: var(--space-xl);
+}
+
+.poison-card {
+    background: var(--bg-primary);
+    border-radius: var(--radius-lg);
+    padding: var(--space-lg);
+    box-shadow: var(--shadow-md);
+    border-top: 4px solid var(--color-danger);
+}
+
+.poison-danger-level {
+    display: inline-block;
+    padding: 0.2rem 0.6rem;
+    border-radius: var(--radius-sm);
+    font-size: 0.75rem;
+    font-weight: 700;
+    margin-bottom: var(--space-sm);
+}
+
+.danger-extreme {
+    background: var(--color-danger);
+    color: white;
+}
+
+.danger-high {
+    background: var(--color-warning);
+    color: white;
+}
+
+.poison-details p {
+    font-size: 0.9rem;
+    margin-bottom: var(--space-sm);
+}
+
+/* Emergency Box */
+.emergency-box {
+    background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%);
+    padding: var(--space-xl);
+    border-radius: var(--radius-lg);
+    border: 2px solid var(--color-info);
+}
+
+.emergency-box h3 {
+    color: var(--color-info);
+    margin-bottom: var(--space-md);
+}
+
+.emergency-box ol {
+    padding-left: var(--space-lg);
+}
+
+.emergency-box li {
+    margin-bottom: var(--space-sm);
+}
+
+/* Chapter Pagination */
+.chapter-pagination {
+    display: flex;
+    justify-content: space-between;
+    padding: var(--space-xl) 0;
+    border-top: 2px solid var(--bg-tertiary);
+    margin-top: var(--space-xl);
+}
+
+.chapter-pagination a {
+    padding: var(--space-md) var(--space-xl);
+    background: var(--bg-secondary);
+    border-radius: var(--radius-md);
+    font-weight: 600;
+    transition: all var(--transition-fast);
+}
+
+.chapter-pagination a:hover {
+    background: var(--color-primary);
+    color: var(--text-inverse);
+}
+
+/* Chapter Footer */
+.chapter-footer {
+    background: var(--bg-dark);
+    color: var(--text-inverse);
+    padding: var(--space-xl) 0;
+    text-align: center;
+}
+
+.chapter-footer p {
+    margin: var(--space-xs) 0;
+    opacity: 0.7;
+    font-size: 0.9rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .chapter-hero h1 {
+        font-size: 2rem;
+    }
+
+    .plant-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .chapter-pagination {
+        flex-direction: column;
+        gap: var(--space-md);
+    }
+
+    .chapter-pagination a {
+        text-align: center;
+    }
+}

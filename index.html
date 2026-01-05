@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Europa Überlebens-Fibel - Umfassender Ratgeber für Krisenzeiten">
+    <meta name="keywords" content="Überleben, Survival, Europa, Krise, Notfall, Naturkatastrophe">
+    <title>Europa Überlebens-Fibel</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
+</head>
+<body>
+    <!-- Language Selector -->
+    <div class="language-bar">
+        <select id="language-select" class="language-select" aria-label="Sprache auswählen">
+            <option value="de" selected>🇩🇪 Deutsch</option>
+            <option value="en">🇬🇧 English</option>
+            <option value="fr">🇫🇷 Français</option>
+            <option value="es">🇪🇸 Español</option>
+            <option value="it">🇮🇹 Italiano</option>
+            <option value="pl">🇵🇱 Polski</option>
+            <option value="nl">🇳🇱 Nederlands</option>
+            <option value="pt">🇵🇹 Português</option>
+            <option value="cs">🇨🇿 Čeština</option>
+            <option value="ro">🇷🇴 Română</option>
+            <option value="hu">🇭🇺 Magyar</option>
+            <option value="sv">🇸🇪 Svenska</option>
+            <option value="el">🇬🇷 Ελληνικά</option>
+            <option value="uk">🇺🇦 Українська</option>
+            <option value="bg">🇧🇬 Български</option>
+            <option value="hr">🇭🇷 Hrvatski</option>
+            <option value="sk">🇸🇰 Slovenčina</option>
+            <option value="da">🇩🇰 Dansk</option>
+            <option value="fi">🇫🇮 Suomi</option>
+            <option value="no">🇳🇴 Norsk</option>
+        </select>
+    </div>
+
+    <!-- Header -->
+    <header class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="hero-icon">🌿</div>
+            <h1 data-i18n="title">Europa Überlebens-Fibel</h1>
+            <p class="hero-subtitle" data-i18n="subtitle">Wissen für Krisenzeiten - Von Naturkatastrophen bis Notfälle</p>
+            <div class="hero-actions">
+                <a href="#chapters" class="btn btn-primary" data-i18n="start_reading">Jetzt lesen</a>
+                <button class="btn btn-secondary" id="download-pdf" data-i18n="download_pdf">📥 Als PDF herunterladen</button>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span data-i18n="scroll_down">Nach unten scrollen</span>
+            <div class="scroll-arrow">↓</div>
+        </div>
+    </header>
+
+    <!-- Warning Banner -->
+    <div class="warning-banner">
+        <div class="container">
+            <span class="warning-icon">⚠️</span>
+            <p data-i18n="warning_text">
+                <strong>Wichtiger Hinweis:</strong> Diese Fibel dient als Notfall-Ratgeber. 
+                Medizinische Informationen ersetzen keine professionelle ärztliche Behandlung. 
+                Beachte stets die lokalen Gesetze deines Landes.
+            </p>
+        </div>
+    </div>
+
+    <!-- Main Navigation -->
+    <nav class="main-nav" id="main-nav">
+        <div class="container">
+            <div class="nav-brand">
+                <span class="nav-icon">🌿</span>
+                <span class="nav-title" data-i18n="nav_title">Überlebens-Fibel</span>
+            </div>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Menü öffnen">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#pflanzen" data-i18n="nav_plants">🌿 Pflanzen</a></li>
+                <li><a href="#tiere" data-i18n="nav_animals">🦌 Tiere</a></li>
+                <li><a href="#europa" data-i18n="nav_europe">🌍 Europa</a></li>
+                <li><a href="#leben" data-i18n="nav_survival">🏠 Überleben</a></li>
+                <li><a href="#krankheiten" data-i18n="nav_health">💊 Gesundheit</a></li>
+                <li><a href="#wasser" data-i18n="nav_water">💧 Wasser</a></li>
+                <li><a href="#feuer" data-i18n="nav_fire">🔥 Feuer</a></li>
+                <li><a href="#werkzeuge" data-i18n="nav_tools">🔧 Werkzeuge</a></li>
+            </ul>
+            <div class="nav-search">
+                <input type="search" id="search-input" placeholder="Suchen..." data-i18n-placeholder="search_placeholder">
+                <button class="search-btn" aria-label="Suchen">🔍</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Chapter Overview -->
+    <section class="chapters-overview" id="chapters">
+        <div class="container">
+            <h2 class="section-title" data-i18n="chapters_title">Kapitelübersicht</h2>
+            <p class="section-subtitle" data-i18n="chapters_subtitle">Wähle ein Thema, um mehr zu erfahren</p>
+            
+            <div class="chapters-grid">
+                <!-- Pflanzen -->
+                <a href="chapters/pflanzen.html" class="chapter-card chapter-plants">
+                    <div class="chapter-icon">🌿</div>
+                    <div class="chapter-content">
+                        <h3 data-i18n="chapter_plants">Pflanzen</h3>
+                        <p data-i18n="chapter_plants_desc">Heilkräuter, essbare Wildpflanzen, Pilze und giftige Pflanzen erkennen</p>
+                        <span class="chapter-count" data-i18n="chapter_plants_count">7 Unterkapitel</span>
+                    </div>
+                    <div class="chapter-arrow">→</div>
+                </a>
+
+                <!-- Tiere -->
+                <a href="chapters/tiere.html" class="chapter-card chapter-animals">
+                    <div class="chapter-icon">🦌</div>
+                    <div class="chapter-content">
+                        <h3 data-i18n="chapter_animals">Tiere</h3>
+                        <p data-i18n="chapter_animals_desc">Jagd, Fischfang, Verarbeitung und Haltbarmachung von Nahrung</p>
+                        <span class="chapter-count" data-i18n="chapter_animals_count">6 Unterkapitel</span>
+                    </div>
+                    <div class="chapter-arrow">→</div>
+                </a>
+
+                <!-- Europa -->
+                <a href="chapters/europa.html" class="chapter-card chapter-europe">
+                    <div class="chapter-icon">🌍</div>
+                    <div class="chapter-content">
+                        <h3 data-i18n="chapter_europe">Europa</h3>
+                        <p data-i18n="chapter_europe_desc">Wälder, Klimazonen, Ressourcen und wichtige Länderinformationen</p>
+                        <span class="chapter-count" data-i18n="chapter_europe_count">5 Unterkapitel</span>
+                    </div>
+                    <div class="chapter-arrow">→</div>
+                </a>
+
+                <!-- Leben/Überleben -->
+                <a href="chapters/leben.html" class="chapter-card chapter-survival">
+                    <div class="chapter-icon">🏠</div>
+                    <div class="chapter-content">
+                        <h3 data-i18n="chapter_survival">Überleben</h3>
+                        <p data-i18n="chapter_survival_desc">Von der Großstadt bis zum Wald - Überlebensstrategien für jede Umgebung</p>
+                        <span class="chapter-count" data-i18n="chapter_survival_count">7 Unterkapitel</span>
+                    </div>
+                    <div class="chapter-arrow">→</div>
+                </a>
+
+                <!-- Krankheiten -->
+                <a href="chapters/krankheiten.html" class="chapter-card chapter-health">
+                    <div class="chapter-icon">💊</div>
+                    <div class="chapter-content">
+                        <h3 data-i18n="chapter_health">Gesundheit</h3>
+                        <p data-i18n="chapter_health_desc">Symptome, Erste Hilfe, Wundversorgung und Notfall-Medikamente</p>
+                        <span class="chapter-count" data-i18n="chapter_health_count">11 Unterkapitel</span>
+                    </div>
+                    <div class="chapter-arrow">→</div>
+                </a>
+
+                <!-- Wasser -->
+                <a href="chapters/wasser.html" class="chapter-card chapter-water">
+                    <div class="chapter-icon">💧</div>
+                    <div class="chapter-content">
+                        <h3 data-i18n="chapter_water">Wasser</h3>
+                        <p data-i18n="chapter_water_desc">Wasserquellen finden, reinigen und sicher speichern</p>
+                        <span class="chapter-count" data-i18n="chapter_water_count">4 Unterkapitel</span>
+                    </div>
+                    <div class="chapter-arrow">→</div>
+                </a>
+
+                <!-- Feuer -->
+                <a href="chapters/feuer.html" class="chapter-card chapter-fire">
+                    <div class="chapter-icon">🔥</div>
+                    <div class="chapter-content">
+                        <h3 data-i18n="chapter_fire">Feuer</h3>
+                        <p data-i18n="chapter_fire_desc">Feuer machen, sichere Feuerstellen und Kochen ohne Strom</p>
+                        <span class="chapter-count" data-i18n="chapter_fire_count">4 Unterkapitel</span>
+                    </div>
+                    <div class="chapter-arrow">→</div>
+                </a>
+
+                <!-- Werkzeuge -->
+                <a href="chapters/werkzeuge.html" class="chapter-card chapter-tools">
+                    <div class="chapter-icon">🔧</div>
+                    <div class="chapter-content">
+                        <h3 data-i18n="chapter_tools">Werkzeuge & Unterkunft</h3>
+                        <p data-i18n="chapter_tools_desc">Werkzeuge bauen, Unterkünfte errichten und Reparaturen durchführen</p>
+                        <span class="chapter-count" data-i18n="chapter_tools_count">4 Unterkapitel</span>
+                    </div>
+                    <div class="chapter-arrow">→</div>
+                </a>
+
+                <!-- Navigation -->
+                <a href="chapters/navigation.html" class="chapter-card chapter-navigation">
+                    <div class="chapter-icon">🧭</div>
+                    <div class="chapter-content">
+                        <h3 data-i18n="chapter_navigation">Navigation</h3>
+                        <p data-i18n="chapter_navigation_desc">Orientierung ohne Hilfsmittel, Karten lesen und Signale</p>
+                        <span class="chapter-count" data-i18n="chapter_navigation_count">4 Unterkapitel</span>
+                    </div>
+                    <div class="chapter-arrow">→</div>
+                </a>
+
+                <!-- Kommunikation -->
+                <a href="chapters/kommunikation.html" class="chapter-card chapter-communication">
+                    <div class="chapter-icon">📡</div>
+                    <div class="chapter-content">
+                        <h3 data-i18n="chapter_communication">Kommunikation</h3>
+                        <p data-i18n="chapter_communication_desc">Kommunikation ohne Strom, Funkgeräte und geheime Nachrichten</p>
+                        <span class="chapter-count" data-i18n="chapter_communication_count">3 Unterkapitel</span>
+                    </div>
+                    <div class="chapter-arrow">→</div>
+                </a>
+
+                <!-- Psychologie -->
+                <a href="chapters/psychologie.html" class="chapter-card chapter-psychology">
+                    <div class="chapter-icon">🧠</div>
+                    <div class="chapter-content">
+                        <h3 data-i18n="chapter_psychology">Psychologie & Gruppe</h3>
+                        <p data-i18n="chapter_psychology_desc">Mentale Stärke, Gruppenführung und Traumabewältigung</p>
+                        <span class="chapter-count" data-i18n="chapter_psychology_count">4 Unterkapitel</span>
+                    </div>
+                    <div class="chapter-arrow">→</div>
+                </a>
+
+                <!-- Recht -->
+                <a href="chapters/recht.html" class="chapter-card chapter-law">
+                    <div class="chapter-icon">⚖️</div>
+                    <div class="chapter-content">
+                        <h3 data-i18n="chapter_law">Recht & Ethik</h3>
+                        <p data-i18n="chapter_law_desc">Notwehr, Rechte in Krisen und internationale Hilfszeichen</p>
+                        <span class="chapter-count" data-i18n="chapter_law_count">4 Unterkapitel</span>
+                    </div>
+                    <div class="chapter-arrow">→</div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Tips Section -->
+    <section class="quick-tips">
+        <div class="container">
+            <h2 class="section-title" data-i18n="quick_tips_title">🆘 Schnelle Notfall-Tipps</h2>
+            <div class="tips-grid">
+                <div class="tip-card">
+                    <div class="tip-number">1</div>
+                    <h3 data-i18n="tip1_title">Ruhe bewahren</h3>
+                    <p data-i18n="tip1_text">Panik verbraucht Energie und führt zu Fehlentscheidungen. Atme tief durch und denke nach.</p>
+                </div>
+                <div class="tip-card">
+                    <div class="tip-number">2</div>
+                    <h3 data-i18n="tip2_title">Wasser zuerst</h3>
+                    <p data-i18n="tip2_text">Du überlebst 3 Tage ohne Wasser, 3 Wochen ohne Essen. Priorisiere Wasserbeschaffung.</p>
+                </div>
+                <div class="tip-card">
+                    <div class="tip-number">3</div>
+                    <h3 data-i18n="tip3_title">Unterkunft finden</h3>
+                    <p data-i18n="tip3_text">Schutz vor Witterung ist essentiell. Kälte und Nässe sind die größten Feinde.</p>
+                </div>
+                <div class="tip-card">
+                    <div class="tip-number">4</div>
+                    <h3 data-i18n="tip4_title">Signale geben</h3>
+                    <p data-i18n="tip4_text">Mache auf dich aufmerksam. Drei von allem (Pfiffe, Feuer, Rufe) ist das internationale Notsignal.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4 data-i18n="footer_about">Über diese Fibel</h4>
+                    <p data-i18n="footer_about_text">Eine umfassende Sammlung von Überlebenswissen für Krisensituationen in Europa. Kostenlos verfügbar für alle.</p>
+                </div>
+                <div class="footer-section">
+                    <h4 data-i18n="footer_download">Downloads</h4>
+                    <ul>
+                        <li><a href="#" id="download-full-pdf" data-i18n="footer_full_pdf">📥 Komplette Fibel (PDF)</a></li>
+                        <li><a href="#" data-i18n="footer_print_version">🖨️ Druckversion</a></li>
+                        <li><a href="#" data-i18n="footer_offline">📴 Offline-Version</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 data-i18n="footer_contribute">Mitmachen</h4>
+                    <ul>
+                        <li><a href="https://github.com" target="_blank" data-i18n="footer_github">GitHub Repository</a></li>
+                        <li><a href="#" data-i18n="footer_report">Fehler melden</a></li>
+                        <li><a href="#" data-i18n="footer_translate">Übersetzung beitragen</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p data-i18n="footer_license">Diese Fibel ist unter der Creative Commons Lizenz (CC BY-NC-SA 4.0) veröffentlicht.</p>
+                <p data-i18n="footer_disclaimer">⚠️ Alle Informationen ohne Gewähr. Im Notfall immer professionelle Hilfe suchen.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/i18n.js"></script>
+    <script src="js/navigation.js"></script>
+    <script src="js/search.js"></script>
+    <script src="js/pdf-export.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
