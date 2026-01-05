@@ -6,7 +6,7 @@ Meine umfassende Überlebens-Fibel für Europa - Wissen für Krisenzeiten.
 
 ## 🌐 Live-Website
 
-[https://USERNAME.github.io/europa-fible](https://USERNAME.github.io/europa-fible)
+[https://sannyng.github.io/europa-fible/](https://sannyng.github.io/europa-fible/)
 
 ## 📖 Inhalt
 
@@ -38,7 +38,7 @@ Verfügbar in 20 europäischen Sprachen:
 
 ```bash
 # Clone
-git clone https://github.com/USERNAME/europa-fible.git
+git clone https://github.com/sannyng/europa-fible.git
 cd europa-fible
 
 # Lokalen Server starten
