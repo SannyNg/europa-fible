@@ -16,8 +16,8 @@ const countriesData = {
         title: '🌊 Westeuropa',
         countries: [
             { flag: '🇫🇷', name: 'Frankreich', href: 'frankreich.html', status: '✅ 10 Kräuter', complete: true },
-            { flag: '🇳🇱', name: 'Niederlande', href: '', status: '⏳ Geplant', complete: false },
-            { flag: '🇧🇪', name: 'Belgien', href: '', status: '⏳ Geplant', complete: false }
+            { flag: '🇳🇱', name: 'Niederlande', href: 'niederlande.html', status: '✅ 10 Kräuter', complete: true },
+            { flag: '🇧🇪', name: 'Belgien', href: 'belgien.html', status: '✅ 10 Kräuter', complete: true }
         ]
     },
     south: {
@@ -33,8 +33,8 @@ const countriesData = {
         title: '🌲 Osteuropa',
         countries: [
             { flag: '🇵🇱', name: 'Polen', href: 'polen.html', status: '✅ 10 Kräuter', complete: true },
-            { flag: '🇺🇦', name: 'Ukraine', href: '', status: '⏳ Geplant', complete: false },
-            { flag: '🇨🇿', name: 'Tschechien', href: '', status: '⏳ Geplant', complete: false }
+            { flag: '🇺🇦', name: 'Ukraine', href: 'ukraine.html', status: '✅ 10 Kräuter', complete: true },
+            { flag: '🇨🇿', name: 'Tschechien', href: 'tschechien.html', status: '✅ 10 Kräuter', complete: true }
         ]
     },
     north: {
