@@ -51,10 +51,11 @@
             <h2>📑 Inhalt</h2>
             <ol class="toc-list">
                 <li><a href="#laender">🗺️ Heilkräuter nach Ländern</a></li>
+                <li><a href="#beeren-laender">🫐 Beeren nach Ländern</a></li>
                 <li><a href="#heilkraeuter">Heilkräuter & Notfall-Kräuter</a></li>
                 <li><a href="#wildbeeren">Essbare Wildbeeren</a></li>
-                <li><a href="#selbst-pflanzen">Obst & Gemüse selbst pflanzen</a></li>
-                <li><a href="#nuetzliche">Nützliche Pflanzen</a></li>
+                <li><a href="../selbst-pflanzen/">🥕 Obst & Gemüse selbst pflanzen</a></li>
+                <li><a href="../nuetzliche-pflanzen/">🧰 Nützliche Pflanzen</a></li>
                 <li><a href="#pilze">Essbare Pilze</a></li>
                 <li><a href="#giftig">Giftige Pflanzen</a></li>
                 <li><a href="#saisonkalender">Saisonkalender</a></li>
@@ -67,6 +68,14 @@
         <div class="container">
             <!-- Component renders here automatically -->
             <div id="countries-component" data-base-path=""></div>
+        </div>
+    </section>
+
+    <!-- Berries Countries Overview Section -->
+    <section id="beeren-laender" class="content-section countries-overview countries-section">
+        <div class="container">
+            <!-- Berries Component renders here automatically -->
+            <div id="berries-component" data-base-path="../beeren/"></div>
         </div>
     </section>
 
@@ -758,76 +767,615 @@
                 </div>
             </section>
 
-            <!-- Section 6: Giftige Pflanzen -->
-            <section id="giftig" class="content-section">
-                <h2>☠️ 6. Giftige Pflanzen - LEBENSGEFAHR</h2>
-                <p class="section-intro">Diese Pflanzen können tödlich sein. Lerne sie unbedingt zu erkennen!</p>
-
-                <div class="poison-grid">
-                    <article class="poison-card">
-                        <div class="poison-danger-level danger-extreme">TÖDLICH</div>
-                        <h3>Gefleckter Schierling</h3>
-                        <p class="plant-latin">Conium maculatum</p>
-                        <div class="poison-details">
-                            <p><strong>Erkennung:</strong> Rot gefleckter Stängel, farnähnliche Blätter, unangenehmer
-                                Mäusegeruch</p>
-                            <p><strong>Verwechslung:</strong> Wilde Möhre, Petersilie</p>
-                            <p><strong>Wirkung:</strong> Lähmung, Atemstillstand</p>
-                        </div>
-                    </article>
-
-                    <article class="poison-card">
-                        <div class="poison-danger-level danger-extreme">TÖDLICH</div>
-                        <h3>Blauer Eisenhut</h3>
-                        <p class="plant-latin">Aconitum napellus</p>
-                        <div class="poison-details">
-                            <p><strong>Erkennung:</strong> Tiefblaue, helmförmige Blüten, handförmige Blätter</p>
-                            <p><strong>Gefahr:</strong> Gift wirkt auch über die Haut!</p>
-                            <p><strong>Wirkung:</strong> Herzstillstand innerhalb Stunden</p>
-                        </div>
-                    </article>
-
-                    <article class="poison-card">
-                        <div class="poison-danger-level danger-extreme">TÖDLICH</div>
-                        <h3>Tollkirsche</h3>
-                        <p class="plant-latin">Atropa belladonna</p>
-                        <div class="poison-details">
-                            <p><strong>Erkennung:</strong> Glänzend schwarze Beeren, kirschgroß, süßlich</p>
-                            <p><strong>Gefahr:</strong> 3-4 Beeren können Kinder töten</p>
-                            <p><strong>Wirkung:</strong> Halluzinationen, Herzrasen, Tod</p>
-                        </div>
-                    </article>
-
-                    <article class="poison-card">
-                        <div class="poison-danger-level danger-high">SEHR GIFTIG</div>
-                        <h3>Fingerhut</h3>
-                        <p class="plant-latin">Digitalis purpurea</p>
-                        <div class="poison-details">
-                            <p><strong>Erkennung:</strong> Hohe Pflanze mit rosa/lila Glockenblüten</p>
-                            <p><strong>Gefahr:</strong> Alle Pflanzenteile giftig</p>
-                            <p><strong>Wirkung:</strong> Herzrhythmusstörungen</p>
-                        </div>
-                    </article>
-                </div>
-
-                <div class="emergency-box">
-                    <h3>🆘 Im Notfall: Vergiftung</h3>
-                    <ol>
-                        <li><strong>Ruhe bewahren</strong> - Panik verschlimmert die Situation</li>
-                        <li><strong>Pflanze sichern</strong> - Für Identifikation</li>
-                        <li><strong>KEIN Erbrechen auslösen</strong> - Kann Schaden vergrößern</li>
-                        <li><strong>Kohletabletten</strong> - Falls verfügbar (1g/kg Körpergewicht)</li>
-                        <li><strong>Viel Wasser trinken</strong> - Verdünnung</li>
-                        <li><strong>Giftnotruf:</strong> DE: 030-19240 | AT: 01-4064343 | CH: 145</li>
-                    </ol>
+            <!-- Section 4: Obst & Gemüse selbst pflanzen -->
+            <section id="selbst-pflanzen" class="content-section">
+                <h2>🥕 4. Obst & Gemüse selbst pflanzen</h2>
+                <p class="section-intro">Eigenanbau als wichtigste Nahrungsquelle in Krisenzeiten - Von der Fensterbank
+                    bis zum Notfall-Garten.</p>
+                <div style="text-align: center; padding: 2rem;">
+                    <a href="../selbst-pflanzen/" class="btn btn-primary" style="font-size: 1.2rem;">
+                        🥕 Zum Anbau-Ratgeber →
+                    </a>
+                    <p style="margin-top: 1rem; color: #666;">13+ Gemüsesorten, Obst, Notfall-Garten & Aussaatkalender
+                    </p>
                 </div>
             </section>
 
-            <!-- Navigation -->
-            <nav class="chapter-pagination">
-                <a href="../../index.html" class="prev-chapter">← Zur Übersicht</a>
-                <a href="tiere.html" class="next-chapter">Nächstes Kapitel: Tiere →</a>
-            </nav>
+
+            <p class="plant-latin">Raphanus sativus var. sativus</p>
+            <div class="plant-details">
+                <div class="plant-section">
+                    <h4>⏱️ Ernte</h4>
+                    <p><strong>3-4 Wochen</strong> - Das schnellste Gemüse!</p>
+                </div>
+                <div class="plant-section">
+                    <h4>📋 Anleitung</h4>
+                    <ul>
+                        <li><strong>Aussaat:</strong> Direkt ins Beet, 1cm tief, 3cm Abstand</li>
+                        <li><strong>Wann:</strong> März-September, alle 2 Wochen nachsäen</li>
+                        <li><strong>Pflege:</strong> Feucht halten, nicht zu dicht</li>
+                    </ul>
+                </div>
+                <div class="plant-section">
+                    <h4>💡 Tipps</h4>
+                    <p>Auch auf Balkon in Töpfen! Blätter essbar als Salat.</p>
+                </div>
+            </div>
+            <div class="plant-tags">
+                <span class="tag tag-essential">Anfänger</span>
+                <span class="tag tag-safe">3-4 Wochen</span>
+            </div>
+        </div>
+        </article>
+
+        <!-- Salat -->
+        <article class="plant-card">
+            <div class="plant-image">
+                <span class="plant-emoji">🥬</span>
+            </div>
+            <div class="plant-info">
+                <h3>Pflücksalat</h3>
+                <p class="plant-latin">Lactuca sativa var. crispa</p>
+                <div class="plant-details">
+                    <div class="plant-section">
+                        <h4>⏱️ Ernte</h4>
+                        <p><strong>4-6 Wochen</strong> - Immer wieder ernten!</p>
+                    </div>
+                    <div class="plant-section">
+                        <h4>📋 Anleitung</h4>
+                        <ul>
+                            <li><strong>Aussaat:</strong> Lichtkeimer! Nur andrücken, nicht bedecken</li>
+                            <li><strong>Wann:</strong> März-August</li>
+                            <li><strong>Pflege:</strong> Nur äußere Blätter ernten, Herz stehen lassen</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="plant-tags">
+                    <span class="tag tag-essential">Lichtkeimer</span>
+                    <span class="tag tag-safe">4-6 Wochen</span>
+                </div>
+            </div>
+        </article>
+
+        <!-- Rucola -->
+        <article class="plant-card">
+            <div class="plant-image">
+                <span class="plant-emoji">🥗</span>
+            </div>
+            <div class="plant-info">
+                <h3>Rucola</h3>
+                <p class="plant-latin">Eruca sativa</p>
+                <div class="plant-details">
+                    <div class="plant-section">
+                        <h4>⏱️ Ernte</h4>
+                        <p><strong>3-4 Wochen</strong></p>
+                    </div>
+                    <div class="plant-section">
+                        <h4>📋 Anleitung</h4>
+                        <ul>
+                            <li><strong>Aussaat:</strong> Direkt ins Beet, dünn verteilen</li>
+                            <li><strong>Wann:</strong> März-September</li>
+                            <li><strong>Pflege:</strong> Regelmäßig schneiden fördert Nachwuchs</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="plant-tags">
+                    <span class="tag tag-safe">Robust</span>
+                    <span class="tag tag-spring">3-4 Wochen</span>
+                </div>
+            </div>
+        </article>
+
+        <!-- Spinat -->
+        <article class="plant-card">
+            <div class="plant-image">
+                <span class="plant-emoji">🥬</span>
+            </div>
+            <div class="plant-info">
+                <h3>Spinat</h3>
+                <p class="plant-latin">Spinacia oleracea</p>
+                <div class="plant-details">
+                    <div class="plant-section">
+                        <h4>⏱️ Ernte</h4>
+                        <p><strong>6-8 Wochen</strong></p>
+                    </div>
+                    <div class="plant-section">
+                        <h4>📋 Anleitung</h4>
+                        <ul>
+                            <li><strong>Aussaat:</strong> Direkt ins Beet, 2cm tief</li>
+                            <li><strong>Wann:</strong> März-April oder Sept-Okt (mag keine Hitze!)</li>
+                            <li><strong>Pflege:</strong> Feucht halten, Halbschatten bei Hitze</li>
+                        </ul>
+                    </div>
+                    <div class="plant-section">
+                        <h4>💡 Tipps</h4>
+                        <p>Sehr nahrhaft! Wintersorte übersteht Frost.</p>
+                    </div>
+                </div>
+                <div class="plant-tags">
+                    <span class="tag tag-essential">Nahrhaft</span>
+                    <span class="tag tag-spring">Frühj./Herbst</span>
+                </div>
+            </div>
+        </article>
+        </div>
+
+        <!-- Wichtige Grundnahrungsmittel -->
+        <h3>🥔 Grundnahrungsmittel (längere Kulturdauer)</h3>
+        <p>Diese Pflanzen brauchen mehr Zeit, liefern aber mehr Kalorien.</p>
+
+        <div class="plant-grid">
+            <!-- Kartoffeln -->
+            <article class="plant-card">
+                <div class="plant-image">
+                    <span class="plant-emoji">🥔</span>
+                </div>
+                <div class="plant-info">
+                    <h3>Kartoffeln</h3>
+                    <p class="plant-latin">Solanum tuberosum</p>
+                    <div class="plant-details">
+                        <div class="plant-section">
+                            <h4>⏱️ Ernte</h4>
+                            <p><strong>3-4 Monate</strong> - Früh: 70 Tage, Spät: 120 Tage</p>
+                        </div>
+                        <div class="plant-section">
+                            <h4>📋 Anleitung</h4>
+                            <ul>
+                                <li><strong>Pflanzung:</strong> April-Mai, 10cm tief, 35cm Abstand</li>
+                                <li><strong>Vorkeimen:</strong> 4 Wochen hell bei 10-15°C</li>
+                                <li><strong>Anhäufeln:</strong> Wenn 15cm hoch, Erde anhäufeln!</li>
+                                <li><strong>Ernte:</strong> Wenn Kraut welkt, 2 Wochen warten</li>
+                            </ul>
+                        </div>
+                        <div class="plant-section">
+                            <h4>💡 Notfall-Tipp</h4>
+                            <p>Auch in Eimern/Säcken möglich! 1 Kartoffel = 2-3 kg Ertrag.</p>
+                        </div>
+                    </div>
+                    <div class="plant-tags">
+                        <span class="tag tag-essential">Grundnahrung</span>
+                        <span class="tag tag-common">Lagerfähig</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Bohnen -->
+            <article class="plant-card">
+                <div class="plant-image">
+                    <span class="plant-emoji">🫘</span>
+                </div>
+                <div class="plant-info">
+                    <h3>Bohnen (Busch- & Stangen)</h3>
+                    <p class="plant-latin">Phaseolus vulgaris</p>
+                    <div class="plant-details">
+                        <div class="plant-section">
+                            <h4>⏱️ Ernte</h4>
+                            <p><strong>8-12 Wochen</strong></p>
+                        </div>
+                        <div class="plant-section">
+                            <h4>📋 Anleitung</h4>
+                            <ul>
+                                <li><strong>Aussaat:</strong> Nach Eisheiligen! Frost = Tod</li>
+                                <li><strong>Tiefe:</strong> 3cm, 3 Samen pro Stelle</li>
+                                <li><strong>Stangenbohnen:</strong> Kletterhilfe 2m hoch</li>
+                                <li><strong>Ernte:</strong> Jung pflücken, dann kommen mehr nach</li>
+                            </ul>
+                        </div>
+                        <div class="plant-section">
+                            <h4>💡 Tipps</h4>
+                            <p>Proteinreich! Ausreifen lassen = lagerfähige Trockenbohnen.</p>
+                        </div>
+                    </div>
+                    <div class="plant-tags">
+                        <span class="tag tag-essential">Protein</span>
+                        <span class="tag tag-caution">Frostempfindlich</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Zucchini -->
+            <article class="plant-card">
+                <div class="plant-image">
+                    <span class="plant-emoji">🥒</span>
+                </div>
+                <div class="plant-info">
+                    <h3>Zucchini</h3>
+                    <p class="plant-latin">Cucurbita pepo</p>
+                    <div class="plant-details">
+                        <div class="plant-section">
+                            <h4>⏱️ Ernte</h4>
+                            <p><strong>6-8 Wochen</strong> nach Pflanzung - Extrem ertragreich!</p>
+                        </div>
+                        <div class="plant-section">
+                            <h4>📋 Anleitung</h4>
+                            <ul>
+                                <li><strong>Aussaat:</strong> Vorziehen April oder direkt Mai</li>
+                                <li><strong>Platz:</strong> 1 Pflanze braucht 1m² Platz!</li>
+                                <li><strong>Pflege:</strong> Viel Wasser und Kompost</li>
+                                <li><strong>Ernte:</strong> Jung ernten (15-20cm), täglich kontrollieren</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="plant-tags">
+                        <span class="tag tag-essential">Ertragreich!</span>
+                        <span class="tag tag-safe">6-8 Wochen</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Tomaten -->
+            <article class="plant-card">
+                <div class="plant-image">
+                    <span class="plant-emoji">🍅</span>
+                </div>
+                <div class="plant-info">
+                    <h3>Tomaten</h3>
+                    <p class="plant-latin">Solanum lycopersicum</p>
+                    <div class="plant-details">
+                        <div class="plant-section">
+                            <h4>⏱️ Ernte</h4>
+                            <p><strong>3-4 Monate</strong> nach Aussaat</p>
+                        </div>
+                        <div class="plant-section">
+                            <h4>📋 Anleitung</h4>
+                            <ul>
+                                <li><strong>Vorziehen:</strong> März-April auf Fensterbank</li>
+                                <li><strong>Auspflanzen:</strong> Nach Eisheiligen, regengeschützt!</li>
+                                <li><strong>Ausgeizen:</strong> Seitentriebe in Blattachseln entfernen</li>
+                                <li><strong>Stützen:</strong> Stab oder Schnur nach oben</li>
+                            </ul>
+                        </div>
+                        <div class="plant-section">
+                            <h4>💡 Tipps</h4>
+                            <p>Buschtomate = kein Ausgeizen, ideal für Anfänger. Regenschutz wichtig
+                                (Braunfäule)!</p>
+                        </div>
+                    </div>
+                    <div class="plant-tags">
+                        <span class="tag tag-common">Beliebt</span>
+                        <span class="tag tag-caution">Braucht Übung</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Kürbis -->
+            <article class="plant-card">
+                <div class="plant-image">
+                    <span class="plant-emoji">🎃</span>
+                </div>
+                <div class="plant-info">
+                    <h3>Kürbis</h3>
+                    <p class="plant-latin">Cucurbita maxima / moschata</p>
+                    <div class="plant-details">
+                        <div class="plant-section">
+                            <h4>⏱️ Ernte</h4>
+                            <p><strong>3-4 Monate</strong></p>
+                        </div>
+                        <div class="plant-section">
+                            <h4>📋 Anleitung</h4>
+                            <ul>
+                                <li><strong>Aussaat:</strong> Mai direkt oder April vorziehen</li>
+                                <li><strong>Platz:</strong> Viel! Ranken werden 3-5m lang</li>
+                                <li><strong>Ernte:</strong> Wenn Stiel holzig, vor Frost</li>
+                                <li><strong>Lagerung:</strong> Bis zu 6 Monate möglich!</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="plant-tags">
+                        <span class="tag tag-essential">Lagerfähig</span>
+                        <span class="tag tag-common">Kalorienreich</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Möhren -->
+            <article class="plant-card">
+                <div class="plant-image">
+                    <span class="plant-emoji">🥕</span>
+                </div>
+                <div class="plant-info">
+                    <h3>Möhren</h3>
+                    <p class="plant-latin">Daucus carota</p>
+                    <div class="plant-details">
+                        <div class="plant-section">
+                            <h4>⏱️ Ernte</h4>
+                            <p><strong>3-4 Monate</strong></p>
+                        </div>
+                        <div class="plant-section">
+                            <h4>📋 Anleitung</h4>
+                            <ul>
+                                <li><strong>Aussaat:</strong> März-Juli, in Reihen, dünn!</li>
+                                <li><strong>Keimung:</strong> Dauert 2-3 Wochen (Geduld!)</li>
+                                <li><strong>Boden:</strong> Tiefgründig, keine Steine (sonst krumm)</li>
+                                <li><strong>Trick:</strong> Mit Radieschen mischen (Reihen markieren!)</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="plant-tags">
+                        <span class="tag tag-common">Lagerfähig</span>
+                        <span class="tag tag-spring">Vitamin A</span>
+                    </div>
+                </div>
+            </article>
+        </div>
+
+        <!-- Einfaches Obst -->
+        <h3>🍓 Einfaches Obst für den Garten</h3>
+
+        <div class="plant-grid">
+            <!-- Erdbeeren -->
+            <article class="plant-card">
+                <div class="plant-image">
+                    <span class="plant-emoji">🍓</span>
+                </div>
+                <div class="plant-info">
+                    <h3>Erdbeeren</h3>
+                    <p class="plant-latin">Fragaria × ananassa</p>
+                    <div class="plant-details">
+                        <div class="plant-section">
+                            <h4>📋 Anleitung</h4>
+                            <ul>
+                                <li><strong>Pflanzung:</strong> August oder März</li>
+                                <li><strong>Ernte:</strong> Ab 2. Jahr richtig ertragreich</li>
+                                <li><strong>Vermehrung:</strong> Ausläufer bewurzeln - kostenlose Pflanzen!</li>
+                                <li><strong>Mulchen:</strong> Stroh unter Früchte (Schimmel vermeiden)</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="plant-tags">
+                        <span class="tag tag-essential">Mehrjährig</span>
+                        <span class="tag tag-safe">Balkon-geeignet</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Himbeeren -->
+            <article class="plant-card">
+                <div class="plant-image">
+                    <span class="plant-emoji">🔴</span>
+                </div>
+                <div class="plant-info">
+                    <h3>Himbeeren</h3>
+                    <p class="plant-latin">Rubus idaeus</p>
+                    <div class="plant-details">
+                        <div class="plant-section">
+                            <h4>📋 Anleitung</h4>
+                            <ul>
+                                <li><strong>Pflanzung:</strong> Herbst oder Frühjahr</li>
+                                <li><strong>Sommer-H.:</strong> Tragen an 2-jährigen Ruten</li>
+                                <li><strong>Herbst-H.:</strong> Tragen an 1-jährigen Ruten (einfacher!)</li>
+                                <li><strong>Schnitt:</strong> Abgetragene Ruten bodennah abschneiden</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="plant-tags">
+                        <span class="tag tag-essential">Pflegeleicht</span>
+                        <span class="tag tag-common">Breitet sich aus</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Johannisbeeren -->
+            <article class="plant-card">
+                <div class="plant-image">
+                    <span class="plant-emoji">🔴</span>
+                </div>
+                <div class="plant-info">
+                    <h3>Johannisbeeren</h3>
+                    <p class="plant-latin">Ribes rubrum / nigrum</p>
+                    <div class="plant-details">
+                        <div class="plant-section">
+                            <h4>📋 Anleitung</h4>
+                            <ul>
+                                <li><strong>Sorten:</strong> Rot, Weiß, Schwarz (Vitamin C Bombe!)</li>
+                                <li><strong>Pflege:</strong> Fast keine! Jährlich alte Triebe entfernen</li>
+                                <li><strong>Ernte:</strong> Juni-Juli (rot/weiß), Juli-Aug (schwarz)</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="plant-tags">
+                        <span class="tag tag-essential">Pflegeleicht</span>
+                        <span class="tag tag-safe">Vitamin C</span>
+                    </div>
+                </div>
+            </article>
+        </div>
+
+        <!-- Notfall-Garten Tipps -->
+        <div class="info-card"
+            style="background: linear-gradient(135deg, #f0fff4 0%, #e8f5e9 100%); border-left: 4px solid #2e7d32;">
+            <h3>🆘 Notfall-Garten: Wenn es schnell gehen muss</h3>
+            <div class="info-grid">
+                <div class="info-item">
+                    <h4>🚀 Sofort starten</h4>
+                    <ul>
+                        <li>Radieschen, Kresse, Rucola - in 3-4 Wochen erntereif</li>
+                        <li>Kartoffeln: Jede keimende Kartoffel einpflanzen!</li>
+                        <li>Zwiebeln: Keimende Küchenzwiebeln = Lauchzwiebeln in 2 Wochen</li>
+                    </ul>
+                </div>
+                <div class="info-item">
+                    <h4>♻️ Küchenreste nutzen</h4>
+                    <ul>
+                        <li><strong>Lauch/Frühlingszwiebeln:</strong> Wurzelende in Wasser → wächst nach!</li>
+                        <li><strong>Salatherzen:</strong> In Wasser → neue Blätter</li>
+                        <li><strong>Knoblauchzehe:</strong> Einpflanzen → Knoblauchgrün</li>
+                    </ul>
+                </div>
+                <div class="info-item">
+                    <h4>🪴 Container-Gärtnern</h4>
+                    <ul>
+                        <li>Töpfe, Eimer, Dosen - alles mit Ablauflöchern nutzbar</li>
+                        <li>Kartoffeln im Sack/Eimer: 30l pro Pflanze</li>
+                        <li>Balkon = vollwertiger Gemüsegarten möglich</li>
+                    </ul>
+                </div>
+                <div class="info-item">
+                    <h4>🌱 Saatgut sichern</h4>
+                    <ul>
+                        <li>Samenfeste Sorten (keine F1-Hybriden!)</li>
+                        <li>Tomaten, Bohnen, Erbsen: Samen einfach selbst gewinnen</li>
+                        <li>Trocken und kühl lagern (Jahre haltbar)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Aussaatkalender -->
+        <div class="quick-reference">
+            <h3>📅 Aussaat-Kalender</h3>
+            <table class="reference-table">
+                <thead>
+                    <tr>
+                        <th>Gemüse</th>
+                        <th>Aussaat</th>
+                        <th>Ernte</th>
+                        <th>Dauer</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>🔴 Radieschen</td>
+                        <td>März-Sept</td>
+                        <td>3-4 Wochen später</td>
+                        <td>25-30 Tage</td>
+                    </tr>
+                    <tr>
+                        <td>🥬 Pflücksalat</td>
+                        <td>März-Aug</td>
+                        <td>4-6 Wochen später</td>
+                        <td>30-45 Tage</td>
+                    </tr>
+                    <tr>
+                        <td>🥬 Spinat</td>
+                        <td>März-April, Sept</td>
+                        <td>6-8 Wochen später</td>
+                        <td>45-60 Tage</td>
+                    </tr>
+                    <tr>
+                        <td>🥔 Kartoffeln</td>
+                        <td>April-Mai</td>
+                        <td>Juli-Sept</td>
+                        <td>70-120 Tage</td>
+                    </tr>
+                    <tr>
+                        <td>🫘 Bohnen</td>
+                        <td>Mai-Juni</td>
+                        <td>Juli-Okt</td>
+                        <td>60-90 Tage</td>
+                    </tr>
+                    <tr>
+                        <td>🥒 Zucchini</td>
+                        <td>Mai</td>
+                        <td>Juni-Okt</td>
+                        <td>50-60 Tage</td>
+                    </tr>
+                    <tr>
+                        <td>🍅 Tomaten</td>
+                        <td>März (drinnen)</td>
+                        <td>Juli-Okt</td>
+                        <td>90-120 Tage</td>
+                    </tr>
+                    <tr>
+                        <td>🥕 Möhren</td>
+                        <td>März-Juli</td>
+                        <td>Juni-Nov</td>
+                        <td>70-120 Tage</td>
+                    </tr>
+                    <tr>
+                        <td>🎃 Kürbis</td>
+                        <td>Mai</td>
+                        <td>Sept-Okt</td>
+                        <td>90-120 Tage</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        </section>
+
+        <!-- Section 5: Nützliche Pflanzen -->
+        <section id="nuetzliche" class="content-section">
+            <h2>🧰 5. Nützliche Pflanzen</h2>
+            <p class="section-intro">Pflanzen für Werkzeuge, Fasern, Färben und andere praktische Anwendungen.</p>
+
+            <div style="text-align: center; padding: 2rem;">
+                <a href="../nuetzliche-pflanzen/" class="btn btn-primary" style="font-size: 1.2rem;">
+                    🧰 Zum Werkstatt-Ratgeber →
+                </a>
+                <p style="margin-top: 1rem; color: #666;">Fasern, Holz, Feuer, Hygiene, Kleber & Färben</p>
+            </div>
+        </section>
+
+        <!-- Section 6: Giftige Pflanzen -->
+        <section id="giftig" class="content-section">
+            <h2>☠️ 6. Giftige Pflanzen - LEBENSGEFAHR</h2>
+            <p class="section-intro">Diese Pflanzen können tödlich sein. Lerne sie unbedingt zu erkennen!</p>
+
+            <div class="poison-grid">
+                <article class="poison-card">
+                    <div class="poison-danger-level danger-extreme">TÖDLICH</div>
+                    <h3>Gefleckter Schierling</h3>
+                    <p class="plant-latin">Conium maculatum</p>
+                    <div class="poison-details">
+                        <p><strong>Erkennung:</strong> Rot gefleckter Stängel, farnähnliche Blätter, unangenehmer
+                            Mäusegeruch</p>
+                        <p><strong>Verwechslung:</strong> Wilde Möhre, Petersilie</p>
+                        <p><strong>Wirkung:</strong> Lähmung, Atemstillstand</p>
+                    </div>
+                </article>
+
+                <article class="poison-card">
+                    <div class="poison-danger-level danger-extreme">TÖDLICH</div>
+                    <h3>Blauer Eisenhut</h3>
+                    <p class="plant-latin">Aconitum napellus</p>
+                    <div class="poison-details">
+                        <p><strong>Erkennung:</strong> Tiefblaue, helmförmige Blüten, handförmige Blätter</p>
+                        <p><strong>Gefahr:</strong> Gift wirkt auch über die Haut!</p>
+                        <p><strong>Wirkung:</strong> Herzstillstand innerhalb Stunden</p>
+                    </div>
+                </article>
+
+                <article class="poison-card">
+                    <div class="poison-danger-level danger-extreme">TÖDLICH</div>
+                    <h3>Tollkirsche</h3>
+                    <p class="plant-latin">Atropa belladonna</p>
+                    <div class="poison-details">
+                        <p><strong>Erkennung:</strong> Glänzend schwarze Beeren, kirschgroß, süßlich</p>
+                        <p><strong>Gefahr:</strong> 3-4 Beeren können Kinder töten</p>
+                        <p><strong>Wirkung:</strong> Halluzinationen, Herzrasen, Tod</p>
+                    </div>
+                </article>
+
+                <article class="poison-card">
+                    <div class="poison-danger-level danger-high">SEHR GIFTIG</div>
+                    <h3>Fingerhut</h3>
+                    <p class="plant-latin">Digitalis purpurea</p>
+                    <div class="poison-details">
+                        <p><strong>Erkennung:</strong> Hohe Pflanze mit rosa/lila Glockenblüten</p>
+                        <p><strong>Gefahr:</strong> Alle Pflanzenteile giftig</p>
+                        <p><strong>Wirkung:</strong> Herzrhythmusstörungen</p>
+                    </div>
+                </article>
+            </div>
+
+            <div class="emergency-box">
+                <h3>🆘 Im Notfall: Vergiftung</h3>
+                <ol>
+                    <li><strong>Ruhe bewahren</strong> - Panik verschlimmert die Situation</li>
+                    <li><strong>Pflanze sichern</strong> - Für Identifikation</li>
+                    <li><strong>KEIN Erbrechen auslösen</strong> - Kann Schaden vergrößern</li>
+                    <li><strong>Kohletabletten</strong> - Falls verfügbar (1g/kg Körpergewicht)</li>
+                    <li><strong>Viel Wasser trinken</strong> - Verdünnung</li>
+                    <li><strong>Giftnotruf:</strong> DE: 030-19240 | AT: 01-4064343 | CH: 145</li>
+                </ol>
+            </div>
+        </section>
+
+        <!-- Navigation -->
+        <nav class="chapter-pagination">
+            <a href="../../index.html" class="prev-chapter">← Zur Übersicht</a>
+            <a href="tiere.html" class="next-chapter">Nächstes Kapitel: Tiere →</a>
+        </nav>
 
         </div>
     </main>
@@ -841,6 +1389,7 @@
     </footer>
 
     <script src="../../js/countries-component.js"></script>
+    <script src="../../js/berries-component.js"></script>
     <script src="../../js/i18n.js"></script>
     <script src="../../js/navigation.js"></script>
 </body>
