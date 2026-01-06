@@ -11,16 +11,16 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:wght@400;600;700&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/chapter.css">
-    <link rel="icon" type="image/svg+xml" href="../assets/icons/favicon.svg">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/chapter.css">
+    <link rel="icon" type="image/svg+xml" href="../../assets/icons/favicon.svg">
 </head>
 
 <body>
     <!-- Back Navigation -->
     <nav class="chapter-nav">
         <div class="container">
-            <a href="../index.html" class="back-link">← Zurück zur Übersicht</a>
+            <a href="../../index.html" class="back-link">← Zurück zur Übersicht</a>
             <div class="chapter-progress">
                 <span>Kapitel 1 von 12</span>
             </div>
@@ -62,82 +62,11 @@
         </div>
     </nav>
 
-    <!-- Countries Overview Section -->
-    <section id="laender" class="content-section countries-overview">
+    <!-- Countries Overview Section - loaded dynamically -->
+    <section id="laender" class="content-section countries-overview countries-section">
         <div class="container">
-            <h2>🗺️ Heilkräuter nach Ländern</h2>
-            <p class="section-intro">80 Heilkräuter aus 8 europäischen Ländern - mit lokalen Namen, Fundorten und
-                botanischen Illustrationen.</p>
-
-            <div class="countries-grid-chapter">
-                <!-- DACH -->
-                <div class="region-block">
-                    <h3>🏔️ DACH-Region</h3>
-                    <div class="country-links">
-                        <a href="laender/deutschland.html" class="country-link">
-                            <span class="flag">🇩🇪</span>
-                            <span class="name">Deutschland</span>
-                            <span class="count">10 Kräuter</span>
-                        </a>
-                        <a href="laender/oesterreich.html" class="country-link">
-                            <span class="flag">🇦🇹</span>
-                            <span class="name">Österreich</span>
-                            <span class="count">10 Kräuter</span>
-                        </a>
-                        <a href="laender/schweiz.html" class="country-link">
-                            <span class="flag">🇨🇭</span>
-                            <span class="name">Schweiz</span>
-                            <span class="count">10 Kräuter</span>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- West -->
-                <div class="region-block">
-                    <h3>🌊 Westeuropa</h3>
-                    <div class="country-links">
-                        <a href="laender/frankreich.html" class="country-link">
-                            <span class="flag">🇫🇷</span>
-                            <span class="name">Frankreich</span>
-                            <span class="count">10 Kräuter</span>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- South -->
-                <div class="region-block">
-                    <h3>☀️ Südeuropa</h3>
-                    <div class="country-links">
-                        <a href="laender/italien.html" class="country-link">
-                            <span class="flag">🇮🇹</span>
-                            <span class="name">Italien</span>
-                            <span class="count">10 Kräuter</span>
-                        </a>
-                        <a href="laender/spanien.html" class="country-link">
-                            <span class="flag">🇪🇸</span>
-                            <span class="name">Spanien</span>
-                            <span class="count">10 Kräuter</span>
-                        </a>
-                        <a href="laender/griechenland.html" class="country-link">
-                            <span class="flag">🇬🇷</span>
-                            <span class="name">Griechenland</span>
-                            <span class="count">10 Kräuter</span>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- East -->
-                <div class="region-block">
-                    <h3>🌲 Osteuropa</h3>
-                    <div class="country-links">
-                        <a href="laender/polen.html" class="country-link">
-                            <span class="flag">🇵🇱</span>
-                            <span class="name">Polen</span>
-                            <span class="count">10 Kräuter</span>
-                        </a>
-                    </div>
-                </div>
-            </div>
+            <!-- Component renders here automatically -->
+            <div id="countries-component" data-base-path="../../"></div>
         </div>
     </section>
 
@@ -155,7 +84,7 @@
                     <!-- Kamille -->
                     <article class="plant-card">
                         <div class="plant-image plant-image-kamille">
-                            <img src="../assets/images/kamille.png" alt="Echte Kamille - Matricaria chamomilla"
+                            <img src="../../assets/images/kamille.png" alt="Echte Kamille - Matricaria chamomilla"
                                 class="plant-photo">
                         </div>
                         <div class="plant-info">
@@ -198,7 +127,7 @@
                     <!-- Spitzwegerich -->
                     <article class="plant-card">
                         <div class="plant-image plant-image-spitzwegerich">
-                            <img src="../assets/images/spitzwegerich.png" alt="Spitzwegerich - Plantago lanceolata"
+                            <img src="../../assets/images/spitzwegerich.png" alt="Spitzwegerich - Plantago lanceolata"
                                 class="plant-photo">
                         </div>
                         <div class="plant-info">
@@ -242,7 +171,7 @@
                     <!-- Schafgarbe -->
                     <article class="plant-card">
                         <div class="plant-image plant-image-schafgarbe">
-                            <img src="../assets/images/schafgarbe.png" alt="Schafgarbe - Achillea millefolium"
+                            <img src="../../assets/images/schafgarbe.png" alt="Schafgarbe - Achillea millefolium"
                                 class="plant-photo">
                         </div>
                         <div class="plant-info">
@@ -284,7 +213,7 @@
                     <!-- Brennnessel -->
                     <article class="plant-card">
                         <div class="plant-image plant-image-brennnessel">
-                            <img src="../assets/images/brennnessel.png" alt="Brennnessel - Urtica dioica"
+                            <img src="../../assets/images/brennnessel.png" alt="Brennnessel - Urtica dioica"
                                 class="plant-photo">
                         </div>
                         <div class="plant-info">
@@ -896,7 +825,7 @@
 
             <!-- Navigation -->
             <nav class="chapter-pagination">
-                <a href="../index.html" class="prev-chapter">← Zur Übersicht</a>
+                <a href="../../index.html" class="prev-chapter">← Zur Übersicht</a>
                 <a href="tiere.html" class="next-chapter">Nächstes Kapitel: Tiere →</a>
             </nav>
 
@@ -911,8 +840,9 @@
         </div>
     </footer>
 
-    <script src="../js/i18n.js"></script>
-    <script src="../js/navigation.js"></script>
+    <script src="../../js/countries-component.js"></script>
+    <script src="../../js/i18n.js"></script>
+    <script src="../../js/navigation.js"></script>
 </body>
 
 </html>
