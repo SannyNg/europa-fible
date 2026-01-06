@@ -322,6 +322,12 @@
     color: #721c24;
 }
 
+.tag-caution {
+    background: #ff9800;
+    color: white;
+    font-weight: 600;
+}
+
 /* Quick Reference Table */
 .quick-reference {
     background: var(--bg-secondary);
@@ -510,6 +516,79 @@
     font-size: 0.9rem;
 }
 
+/* Countries Overview Section */
+.countries-overview {
+    background: linear-gradient(135deg, var(--bg-alt) 0%, var(--bg-light) 100%);
+    padding: var(--space-xl) 0;
+    margin-bottom: var(--space-xl);
+}
+
+.countries-grid-chapter {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--space-lg);
+}
+
+.region-block {
+    background: var(--bg-light);
+    border-radius: var(--radius-lg);
+    padding: var(--space-lg);
+    box-shadow: var(--shadow-md);
+}
+
+.region-block h3 {
+    font-size: 1.2rem;
+    margin-bottom: var(--space-md);
+    color: var(--primary);
+    border-bottom: 2px solid var(--primary);
+    padding-bottom: var(--space-xs);
+}
+
+.country-links {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-sm);
+}
+
+.country-link {
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+    padding: var(--space-sm) var(--space-md);
+    background: var(--bg-alt);
+    border-radius: var(--radius-md);
+    text-decoration: none;
+    color: var(--text-dark);
+    transition: all 0.2s ease;
+}
+
+.country-link:hover {
+    background: var(--primary);
+    color: white;
+    transform: translateX(5px);
+}
+
+.country-link .flag {
+    font-size: 1.5rem;
+}
+
+.country-link .name {
+    flex: 1;
+    font-weight: 600;
+}
+
+.country-link .count {
+    font-size: 0.85rem;
+    opacity: 0.8;
+    background: rgba(0, 0, 0, 0.1);
+    padding: 2px 8px;
+    border-radius: var(--radius-sm);
+}
+
+.country-link:hover .count {
+    background: rgba(255, 255, 255, 0.2);
+}
+
 /* Responsive */
 @media (max-width: 768px) {
     .chapter-hero h1 {
@@ -527,5 +606,9 @@
 
     .chapter-pagination a {
         text-align: center;
+    }
+
+    .countries-grid-chapter {
+        grid-template-columns: 1fr;
     }
 }
