@@ -7,15 +7,15 @@ const countriesData = {
     dach: {
         title: '🏔️ DACH-Region',
         countries: [
-            { flag: '🇩🇪', name: 'Deutschland', href: 'chapters/heilpflanzen/deutschland.html', status: '✅ 10 Kräuter', complete: true },
-            { flag: '🇦🇹', name: 'Österreich', href: 'chapters/heilpflanzen/oesterreich.html', status: '✅ 10 Kräuter', complete: true },
-            { flag: '🇨🇭', name: 'Schweiz', href: 'chapters/heilpflanzen/schweiz.html', status: '✅ 10 Kräuter', complete: true }
+            { flag: '🇩🇪', name: 'Deutschland', href: 'deutschland.html', status: '✅ 10 Kräuter', complete: true },
+            { flag: '🇦🇹', name: 'Österreich', href: 'oesterreich.html', status: '✅ 10 Kräuter', complete: true },
+            { flag: '🇨🇭', name: 'Schweiz', href: 'schweiz.html', status: '✅ 10 Kräuter', complete: true }
         ]
     },
     west: {
         title: '🌊 Westeuropa',
         countries: [
-            { flag: '🇫🇷', name: 'Frankreich', href: 'chapters/heilpflanzen/frankreich.html', status: '✅ 10 Kräuter', complete: true },
+            { flag: '🇫🇷', name: 'Frankreich', href: 'frankreich.html', status: '✅ 10 Kräuter', complete: true },
             { flag: '🇳🇱', name: 'Niederlande', href: '', status: '⏳ Geplant', complete: false },
             { flag: '🇧🇪', name: 'Belgien', href: '', status: '⏳ Geplant', complete: false }
         ]
@@ -23,16 +23,16 @@ const countriesData = {
     south: {
         title: '☀️ Südeuropa',
         countries: [
-            { flag: '🇮🇹', name: 'Italien', href: 'chapters/heilpflanzen/italien.html', status: '✅ 10 Kräuter', complete: true },
-            { flag: '🇪🇸', name: 'Spanien', href: 'chapters/heilpflanzen/spanien.html', status: '✅ 10 Kräuter', complete: true },
-            { flag: '🇬🇷', name: 'Griechenland', href: 'chapters/heilpflanzen/griechenland.html', status: '✅ 10 Kräuter', complete: true },
-            { flag: '🇵🇹', name: 'Portugal', href: 'chapters/heilpflanzen/portugal.html', status: '✅ 10 Kräuter', complete: true }
+            { flag: '🇮🇹', name: 'Italien', href: 'italien.html', status: '✅ 10 Kräuter', complete: true },
+            { flag: '🇪🇸', name: 'Spanien', href: 'spanien.html', status: '✅ 10 Kräuter', complete: true },
+            { flag: '🇬🇷', name: 'Griechenland', href: 'griechenland.html', status: '✅ 10 Kräuter', complete: true },
+            { flag: '🇵🇹', name: 'Portugal', href: 'portugal.html', status: '✅ 10 Kräuter', complete: true }
         ]
     },
     east: {
         title: '🌲 Osteuropa',
         countries: [
-            { flag: '🇵🇱', name: 'Polen', href: 'chapters/heilpflanzen/polen.html', status: '✅ 10 Kräuter', complete: true },
+            { flag: '🇵🇱', name: 'Polen', href: 'polen.html', status: '✅ 10 Kräuter', complete: true },
             { flag: '🇺🇦', name: 'Ukraine', href: '', status: '⏳ Geplant', complete: false },
             { flag: '🇨🇿', name: 'Tschechien', href: '', status: '⏳ Geplant', complete: false }
         ]
@@ -40,8 +40,8 @@ const countriesData = {
     north: {
         title: '❄️ Nord- & Westeuropa',
         countries: [
-            { flag: '🇸🇪🇳🇴🇫🇮', name: 'Skandinavien', href: 'chapters/heilpflanzen/skandinavien.html', status: '✅ 10 Kräuter', complete: true },
-            { flag: '🇬🇧', name: 'Großbritannien', href: 'chapters/heilpflanzen/grossbritannien.html', status: '✅ 10 Kräuter', complete: true }
+            { flag: '🇸🇪🇳🇴🇫🇮', name: 'Skandinavien', href: 'skandinavien.html', status: '✅ 10 Kräuter', complete: true },
+            { flag: '🇬🇧', name: 'Großbritannien', href: 'grossbritannien.html', status: '✅ 10 Kräuter', complete: true }
         ]
     }
 };
