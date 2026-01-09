@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Essbare Wildbeeren in Europa - 110 Beeren aus 11 Ländern">
+    <meta name="description" content="Essbare Wildbeeren in Europa - Übersicht nach Ländern und Sorten">
     <title>🫐 Beeren - Europa Überlebens-Fibel</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -44,107 +44,351 @@
     <nav class="toc">
         <div class="container">
             <h2>📑 Inhalt</h2>
-            <div class="toc-grid">
-                <a href="#laender" class="toc-item">1. 🗺️ Beeren nach Ländern</a>
-                <a href="#grundregeln" class="toc-item">2. 📋 Grundregeln beim Sammeln</a>
-                <a href="#giftige" class="toc-item">3. ☠️ Giftige Beeren</a>
-                <a href="#konservierung" class="toc-item">4. 🫙 Konservierung</a>
-            </div>
+            <ol class="toc-list">
+                <li><a href="#laender">🗺️ Beeren nach Ländern</a></li>
+                <li><a href="#allgemein">🫐 Häufige essbare Beeren</a></li>
+                <li><a href="#giftig">☠️ Giftige Beeren</a></li>
+            </ol>
         </div>
     </nav>
-
-    <!-- Countries Overview Section - loaded dynamically -->
-    <section id="laender" class="content-section countries-overview countries-section">
-        <div class="container">
-            <!-- Component renders here automatically -->
-            <div id="berries-component" data-base-path=""></div>
-        </div>
-    </section>
 
     <main class="chapter-content">
         <div class="container">
 
-            <!-- Grundregeln -->
-            <section id="grundregeln" class="content-section">
-                <h2>📋 Grundregeln beim Beerensammeln</h2>
+            <!-- Section 1: Länderübersicht -->
+            <section id="laender" class="content-section">
+                <h2>🗺️ 1. Beeren nach Ländern</h2>
+                <p class="section-intro">Regionale Besonderheiten und Spezialitäten.</p>
 
-                <div class="rule-grid">
-                    <div class="rule-item">
-                        <h4>🔍 100% Sicherheit</h4>
-                        <p>Sammle nur Beeren, die du zweifelsfrei identifizieren kannst. Im Zweifelsfall NICHT essen!
-                        </p>
-                    </div>
-                    <div class="rule-item">
-                        <h4>📍 Saubere Standorte</h4>
-                        <p>Meide Straßenränder, gespritzte Felder und Hundeauslaufstrecken.</p>
-                    </div>
-                    <div class="rule-item">
-                        <h4>🦊 Fuchsbandwurm</h4>
-                        <p>Beeren unter Kniehöhe waschen oder kochen. Risiko gering, aber vorhanden.</p>
-                    </div>
-                    <div class="rule-item">
-                        <h4>⚖️ Rechtliches</h4>
-                        <p>Handstraußregel: Kleine Mengen für Eigenbedarf sind meist erlaubt.</p>
-                    </div>
+                <div class="country-grid">
+                    <a href="deutschland.html" class="country-card">
+                        <span class="country-flag">🇩🇪</span>
+                        <h3>Deutschland</h3>
+                        <p>Heidelbeere, Himbeere, Brombeere</p>
+                    </a>
+                    <a href="oesterreich.html" class="country-card">
+                        <span class="country-flag">🇦🇹</span>
+                        <h3>Österreich</h3>
+                        <p>Alpenbeeren, Preiselbeere</p>
+                    </a>
+                    <a href="schweiz.html" class="country-card">
+                        <span class="country-flag">🇨🇭</span>
+                        <h3>Schweiz</h3>
+                        <p>Waldbeeren, Bergflora</p>
+                    </a>
+                    <a href="frankreich.html" class="country-card">
+                        <span class="country-flag">🇫🇷</span>
+                        <h3>Frankreich</h3>
+                        <p>Cassis, Wildfrüchte</p>
+                    </a>
+                    <a href="italien.html" class="country-card">
+                        <span class="country-flag">🇮🇹</span>
+                        <h3>Italien</h3>
+                        <p>Mittelmeerbeeren, Erdbeerbaum</p>
+                    </a>
+                    <a href="spanien.html" class="country-card">
+                        <span class="country-flag">🇪🇸</span>
+                        <h3>Spanien</h3>
+                        <p>Südfrüchte, Beerenvielfalt</p>
+                    </a>
+                    <a href="portugal.html" class="country-card">
+                        <span class="country-flag">🇵🇹</span>
+                        <h3>Portugal</h3>
+                        <p>Atlantik-Beeren</p>
+                    </a>
+                    <a href="griechenland.html" class="country-card">
+                        <span class="country-flag">🇬🇷</span>
+                        <h3>Griechenland</h3>
+                        <p>Mediterrane Wildfrüchte</p>
+                    </a>
+                    <a href="grossbritannien.html" class="country-card">
+                        <span class="country-flag">🇬🇧</span>
+                        <h3>Großbritannien</h3>
+                        <p>Blackberry, Gooseberry</p>
+                    </a>
+                    <a href="skandinavien.html" class="country-card">
+                        <span class="country-flag">🇸🇪</span>
+                        <h3>Skandinavien</h3>
+                        <p>Moltebeere, Moosbeere (Superfood!)</p>
+                    </a>
+                    <a href="polen.html" class="country-card">
+                        <span class="country-flag">🇵🇱</span>
+                        <h3>Polen</h3>
+                        <p>Aronia, Waldbeeren</p>
+                    </a>
                 </div>
             </section>
 
-            <!-- Giftige Beeren -->
-            <section id="giftige" class="content-section">
-                <h2>☠️ Giftige Beeren - LEBENSGEFAHR</h2>
+            <!-- Section 2: Häufige essbare Beeren -->
+            <section id="allgemein" class="content-section">
+                <h2>🫐 2. Häufige essbare Beeren</h2>
+                <p class="section-intro">Diese Beeren findest du sehr häufig in europäischen Wäldern.</p>
 
-                <div class="danger-box">
-                    <h3>Diese Beeren NIEMALS essen!</h3>
-                    <div class="danger-grid">
-                        <div class="danger-item">
-                            <strong>🔴 Tollkirsche</strong>
-                            <p>Glänzend schwarz, kirschgroß. 3-4 Beeren = tödlich für Kinder!</p>
+                <div class="plant-grid">
+                    <!-- Heidelbeere -->
+                    <article class="plant-card">
+                        <div class="plant-image">
+                            <img src="../../assets/images/beeren/heidelbeere.png" alt="Heidelbeere" class="plant-photo"
+                                onerror="this.outerHTML='<span class=\'plant-emoji\'>🫐</span>'">
                         </div>
-                        <div class="danger-item">
-                            <strong>⚪ Einbeere</strong>
-                            <p>EINE einzelne schwarze Beere auf 4-blättrigem Quirl.</p>
+                        <div class="plant-info">
+                            <h3>Heidelbeere (Blaubeere)</h3>
+                            <p class="plant-latin">Vaccinium myrtillus</p>
+                            <div class="plant-details">
+                                <div class="plant-section">
+                                    <h4>🔍 Erkennung</h4>
+                                    <p>Niedriger Strauch, grüne Kantenstängel, blaue Beeren mit färbendem Saft</p>
+                                </div>
+                                <div class="plant-section">
+                                    <h4>🍽️ Verwendung</h4>
+                                    <p>Roh essen, Marmelade, Pfannkuchen. Sehr gesund (Anthocyane)!</p>
+                                </div>
+                            </div>
+                            <div class="plant-tags">
+                                <span class="tag tag-safe">Wald</span>
+                                <span class="tag tag-essential">Superfood</span>
+                                <span class="tag tag-spring">Juli-Sept</span>
+                            </div>
                         </div>
-                        <div class="danger-item">
-                            <strong>⚫ Liguster</strong>
-                            <p>Schwarze Beeren in Trauben. Häufiger Heckenstrauch.</p>
+                    </article>
+
+                    <!-- Himbeere -->
+                    <article class="plant-card">
+                        <div class="plant-image">
+                            <img src="../../assets/images/beeren/himbeere.png" alt="Himbeere" class="plant-photo"
+                                onerror="this.outerHTML='<span class=\'plant-emoji\'>🔴</span>'">
                         </div>
-                        <div class="danger-item">
-                            <strong>🟠 Pfaffenhütchen</strong>
-                            <p>Orange-rosa vierkantige Kapseln. Sehr auffällig, sehr giftig!</p>
+                        <div class="plant-info">
+                            <h3>Himbeere</h3>
+                            <p class="plant-latin">Rubus idaeus</p>
+                            <div class="plant-details">
+                                <div class="plant-section">
+                                    <h4>🔍 Erkennung</h4>
+                                    <p>Rote Sammelsteinfrucht, löst sich leicht vom Zapfen. Stängel stachelig.</p>
+                                </div>
+                                <div class="plant-section">
+                                    <h4>🍽️ Verwendung</h4>
+                                    <p>Roh, Dessert. Blätter als Tee (sehr gesund für Frauen).</p>
+                                </div>
+                            </div>
+                            <div class="plant-tags">
+                                <span class="tag tag-safe">Lichtungen</span>
+                                <span class="tag tag-essential">Lecker</span>
+                                <span class="tag tag-spring">Juni-Aug</span>
+                            </div>
                         </div>
-                        <div class="danger-item">
-                            <strong>🔴 Seidelbast</strong>
-                            <p>Rote Beeren am Stängel, ohne Blätter im Frühjahr.</p>
+                    </article>
+
+                    <!-- Brombeere -->
+                    <article class="plant-card">
+                        <div class="plant-image">
+                            <img src="../../assets/images/beeren/brombeere.png" alt="Brombeere" class="plant-photo"
+                                onerror="this.outerHTML='<span class=\'plant-emoji\'>⚫</span>'">
                         </div>
-                        <div class="danger-item">
-                            <strong>⚫ Heckenkirsche</strong>
-                            <p>Rote Doppelbeeren, leicht durchscheinend.</p>
+                        <div class="plant-info">
+                            <h3>Brombeere</h3>
+                            <p class="plant-latin">Rubus fruticosus</p>
+                            <div class="plant-details">
+                                <div class="plant-section">
+                                    <h4>🔍 Erkennung</h4>
+                                    <p>Schwarze Beeren, fest am Zapfen. Rankende, sehr stachelige Sträucher.</p>
+                                </div>
+                                <div class="plant-section">
+                                    <h4>🍽️ Verwendung</h4>
+                                    <p>Roh, Marmelade, Saft. Blätter als Tee gegen Durchfall.</p>
+                                </div>
+                            </div>
+                            <div class="plant-tags">
+                                <span class="tag tag-safe">Hecken</span>
+                                <span class="tag tag-essential">Robust</span>
+                                <span class="tag tag-spring">Aug-Okt</span>
+                            </div>
                         </div>
-                    </div>
+                    </article>
+
+                    <!-- Walderdbeere -->
+                    <article class="plant-card">
+                        <div class="plant-image">
+                            <img src="../../assets/images/beeren/walderdbeere.png" alt="Walderdbeere"
+                                class="plant-photo" onerror="this.outerHTML='<span class=\'plant-emoji\'>🍓</span>'">
+                        </div>
+                        <div class="plant-info">
+                            <h3>Walderdbeere</h3>
+                            <p class="plant-latin">Fragaria vesca</p>
+                            <div class="plant-details">
+                                <div class="plant-section">
+                                    <h4>🔍 Erkennung</h4>
+                                    <p>Kleine rote Früchte, Samen außen auf der Haut. Dreiteilige gezahnte Blätter.</p>
+                                </div>
+                                <div class="plant-section">
+                                    <h4>🍽️ Verwendung</h4>
+                                    <p>Intensives Aroma! Roh essen. Blätter für Tee.</p>
+                                </div>
+                            </div>
+                            <div class="plant-tags">
+                                <span class="tag tag-safe">Waldränder</span>
+                                <span class="tag tag-essential">Aromatisch</span>
+                                <span class="tag tag-spring">Juni-Juli</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Hagebutte (Copy from Heilpflanzen usually, but defined here too) -->
+                    <article class="plant-card">
+                        <div class="plant-image">
+                            <img src="../../assets/images/heilpflanzen/hagebutte.png" alt="Hagebutte"
+                                class="plant-photo" onerror="this.outerHTML='<span class=\'plant-emoji\'>🌹</span>'">
+                        </div>
+                        <div class="plant-info">
+                            <h3>Hagebutte</h3>
+                            <p class="plant-latin">Rosa canina</p>
+                            <div class="plant-details">
+                                <div class="plant-section">
+                                    <h4>🔍 Erkennung</h4>
+                                    <p>Rote Früchte der Wildrose. Innen Kerne mit juckenden Härchen.</p>
+                                </div>
+                                <div class="plant-section">
+                                    <h4>🍽️ Verwendung</h4>
+                                    <p>Kerne entfernen -> Roh essen oder Mus. Ganz -> Tee (Vitamin C!).</p>
+                                </div>
+                            </div>
+                            <div class="plant-tags">
+                                <span class="tag tag-safe">Überall</span>
+                                <span class="tag tag-essential">Vitamin C</span>
+                                <span class="tag tag-spring">Herbst/Winter</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Holunder (Copy from Heilpflanzen) -->
+                    <article class="plant-card">
+                        <div class="plant-image">
+                            <img src="../../assets/images/heilpflanzen/holunder.png" alt="Holunder" class="plant-photo"
+                                onerror="this.outerHTML='<span class=\'plant-emoji\'>🫐</span>'">
+                        </div>
+                        <div class="plant-info">
+                            <h3>Schwarzer Holunder</h3>
+                            <p class="plant-latin">Sambucus nigra</p>
+                            <div class="plant-details">
+                                <div class="plant-section">
+                                    <h4>🔍 Erkennung</h4>
+                                    <p>Schwarze Beeren in Dolden (Herbst). Rote Stiele.</p>
+                                </div>
+                                <div class="plant-section">
+                                    <h4>⚠️ Wichtig</h4>
+                                    <p>Nur reife schwarze Beeren ernten. <strong>Unbedingt kochen!</strong> Roh giftig.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="plant-tags">
+                                <span class="tag tag-caution">Kochen!</span>
+                                <span class="tag tag-essential">Saft/Mus</span>
+                                <span class="tag tag-spring">Sept-Okt</span>
+                            </div>
+                        </div>
+                    </article>
                 </div>
             </section>
 
-            <!-- Konservierung -->
-            <section id="konservierung" class="content-section">
-                <h2>🫙 Beeren konservieren</h2>
+            <!-- Section 3: Giftige Beeren -->
+            <section id="giftig" class="content-section"
+                style="background: linear-gradient(135deg, #8B0000 0%, #DC143C 100%); padding: 2rem; border-radius: 12px; margin-top: 2rem;">
+                <h2 style="color: white;">☠️ 3. Giftige Beeren - LEBENSGEFAHR</h2>
+                <p class="section-intro" style="color: #ffcccc;">Verwechslungsgefahr! Diese Beeren können tödlich sein.
+                </p>
 
-                <div class="info-grid">
-                    <div class="info-item">
-                        <h4>❄️ Einfrieren</h4>
-                        <p>Beeren einzeln auf Blech vorfrieren, dann in Beutel. Haltbar: 1 Jahr.</p>
-                    </div>
-                    <div class="info-item">
-                        <h4>🍯 Einkochen</h4>
-                        <p>Marmelade, Gelee, Kompott. Mit Zucker (1:1 bis 2:1) und Einkochen.</p>
-                    </div>
-                    <div class="info-item">
-                        <h4>☀️ Trocknen</h4>
-                        <p>Heidelbeeren, Hagebutten eignen sich gut. Für Tee und als Snack.</p>
-                    </div>
-                    <div class="info-item">
-                        <h4>🍷 Ansetzen</h4>
-                        <p>Liköre und Schnäpse: Beeren mit Zucker und Alkohol ansetzen.</p>
-                    </div>
+                <div class="plant-grid">
+                    <!-- Tollkirsche -->
+                    <article class="plant-card">
+                        <div class="plant-image">
+                            <img src="../../assets/images/giftig/tollkirsche.png" alt="Tollkirsche" class="plant-photo"
+                                onerror="this.outerHTML='<span class=\'plant-emoji\'>☠️</span>'">
+                        </div>
+                        <div class="plant-info">
+                            <h3>Tollkirsche</h3>
+                            <p class="plant-latin">Atropa belladonna</p>
+                            <div class="plant-details">
+                                <div class="plant-section">
+                                    <h4>🔍 Erkennung</h4>
+                                    <p>Glänzend schwarze Einzelbeeren, großer Kelchstern. Ovale Blätter.</p>
+                                </div>
+                                <div class="plant-section">
+                                    <h4>⚠️ Gefahr</h4>
+                                    <p>TÖDLICH! Sieht aus wie eine leckere Kirsche/Beere. Kleinkinder gefährdet.</p>
+                                </div>
+                            </div>
+                            <div class="plant-tags">
+                                <span class="tag tag-danger">TÖDLICH</span>
+                                <span class="tag tag-danger">Schwarz</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Einbeere -->
+                    <article class="plant-card">
+                        <div class="plant-image">
+                            <div style="font-size: 5rem; text-align: center;">👁️</div>
+                            <!-- Placeholder if no image -->
+                        </div>
+                        <div class="plant-info">
+                            <h3>Einbeere</h3>
+                            <p class="plant-latin">Paris quadrifolia</p>
+                            <div class="plant-details">
+                                <div class="plant-section">
+                                    <h4>🔍 Erkennung</h4>
+                                    <p>EINE einzelne schwarze Beere im Zentrum von 4 Blättern (Quirl).</p>
+                                </div>
+                                <div class="plant-section">
+                                    <h4>⚠️ Gefahr</h4>
+                                    <p>Sehr giftig. Saponine und Glykoside.</p>
+                                </div>
+                            </div>
+                            <div class="plant-tags">
+                                <span class="tag tag-danger">GIFTIG</span>
+                                <span class="tag tag-danger">Einzelbeere</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Pfaffenhütchen -->
+                    <article class="plant-card">
+                        <div class="plant-image">
+                            <div style="font-size: 5rem; text-align: center;">🏵️</div>
+                        </div>
+                        <div class="plant-info">
+                            <h3>Pfaffenhütchen</h3>
+                            <p class="plant-latin">Euonymus europaeus</p>
+                            <div class="plant-details">
+                                <div class="plant-section">
+                                    <h4>🔍 Erkennung</h4>
+                                    <p>Pink-Orange Früchte, sehen aus wie eine Mütze mit 4 Zipfeln.</p>
+                                </div>
+                                <div class="plant-section">
+                                    <h4>⚠️ Gefahr</h4>
+                                    <p>Stark giftig (Herzglykoside). Auffällige Farbe lockt Kinder an.</p>
+                                </div>
+                            </div>
+                            <div class="plant-tags">
+                                <span class="tag tag-danger">GIFTIG</span>
+                                <span class="tag tag-danger">Auffällig</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <!-- Weitere Kapitel Links -->
+            <section class="content-section related-chapters">
+                <h2>📚 Weitere Kapitel</h2>
+                <div class="chapter-links">
+                    <a href="../heilpflanzen/" class="chapter-link">
+                        <span class="link-icon">🌿</span>
+                        <span class="link-text">Heilpflanzen</span>
+                    </a>
+                    <a href="../selbst-pflanzen/" class="chapter-link">
+                        <span class="link-icon">🥕</span>
+                        <span class="link-text">Selbst pflanzen</span>
+                    </a>
                 </div>
             </section>
 
@@ -154,11 +398,10 @@
     <footer class="chapter-footer">
         <div class="container">
             <p>Europa Überlebens-Fibel | 🫐 Essbare Beeren</p>
-            <p>⚠️ Im Zweifel lieber nicht essen!</p>
+            <p>⚠️ Bei Unsicherheit: NICHT essen!</p>
         </div>
     </footer>
 
-    <script src="../../js/berries-component.js"></script>
     <script src="../../js/i18n.js"></script>
     <script src="../../js/navigation.js"></script>
 </body>

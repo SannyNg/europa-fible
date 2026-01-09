@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Pflanzen-Übersicht - Heilpflanzen, Beeren, Pilze und Nutzrflanzen für das Überleben">
+    <title>🌿 Pflanzen Übersicht - Europa Überlebens-Fibel</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/chapter.css">
+    <link rel="icon" type="image/svg+xml" href="../../assets/icons/favicon.svg">
+    <style>
+        .category-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .category-card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            gap: 1rem;
+            padding: 2rem;
+            background: var(--bg-primary);
+            border-radius: var(--radius-lg);
+            text-decoration: none;
+            color: var(--text-primary);
+            box-shadow: var(--shadow-md);
+            border: 1px solid var(--bg-tertiary);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .category-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-lg);
+            border-color: var(--color-primary);
+        }
+
+        .category-icon {
+            font-size: 4rem;
+        }
+
+        .category-card h3 {
+            margin: 0;
+            font-size: 1.5rem;
+            color: var(--color-primary-dark);
+        }
+
+        .category-card p {
+            margin: 0;
+            color: var(--text-secondary);
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="chapter-nav">
+        <div class="container">
+            <a href="../../index.html" class="back-link">← Zurück zur Hauptseite</a>
+        </div>
+    </nav>
+
+    <header class="chapter-hero" style="background: linear-gradient(135deg, #2E8B57 0%, #3CB371 100%);">
+        <div class="chapter-hero-content">
+            <div class="chapter-icon-large">🌿</div>
+            <h1>Welt der Pflanzen</h1>
+            <p class="chapter-intro">Nahrung, Medizin und Werkstoffe aus der Natur</p>
+        </div>
+    </header>
+
+    <main class="chapter-content">
+        <div class="container">
+            <p class="section-intro">Wähle eine Kategorie, um dein Wissen zu vertiefen.</p>
+
+            <div class="category-grid">
+                <!-- Heilpflanzen -->
+                <a href="../heilpflanzen/index.html" class="category-card">
+                    <span class="category-icon">🌿</span>
+                    <h3>Heilpflanzen</h3>
+                    <p>Natürliche Medizin aus 15 europäischen Ländern. Erkennung & Anwendung.</p>
+                </a>
+
+                <!-- Beeren -->
+                <a href="../beeren/index.html" class="category-card">
+                    <span class="category-icon">🫐</span>
+                    <h3>Essbare Beeren</h3>
+                    <p>Wildbeeren sammeln, bestimmen und giftige Arten meiden.</p>
+                </a>
+
+                <!-- Pilze -->
+                <a href="../pilze/index.html" class="category-card">
+                    <span class="category-icon">🍄</span>
+                    <h3>Pilze</h3>
+                    <p>Speisepilze erkennen und tödliche Giftpilze unterscheiden.</p>
+                </a>
+
+                <!-- Nützliche Pflanzen -->
+                <a href="../nuetzliche-pflanzen/index.html" class="category-card">
+                    <span class="category-icon">🧰</span>
+                    <h3>Nützliche Pflanzen</h3>
+                    <p>Fasern für Seile, Holz für Konstruktionen, Zunder & Feuer.</p>
+                </a>
+
+                <!-- Selbst anbauen -->
+                <a href="../selbst-pflanzen/index.html" class="category-card">
+                    <span class="category-icon">🥕</span>
+                    <h3>Selbst Anbauen</h3>
+                    <p>Notfall-Garten: Gemüse, Obst und Kräuter selbst kultivieren.</p>
+                </a>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="chapter-footer">
+        <div class="container">
+            <p>Europa Überlebens-Fibel | 🌿 Pflanzen Übersicht</p>
+        </div>
+    </footer>
+
+    <script src="../../js/i18n.js"></script>
+</body>
+
+</html>

@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Pflanzen - Heilkräuter, essbare Wildpflanzen und giftige Pflanzen erkennen">
-    <title>🌿 Pflanzen - Europa Überlebens-Fibel</title>
+    <meta name="description" content="Heilpflanzen und essbare Wildpflanzen in Europa - Übersicht nach Ländern">
+    <title>🌿 Heilpflanzen - Europa Überlebens-Fibel</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -17,7 +17,6 @@
 </head>
 
 <body>
-    <!-- Back Navigation -->
     <nav class="chapter-nav">
         <div class="container">
             <a href="../../index.html" class="back-link">← Zurück zur Übersicht</a>
@@ -27,203 +26,131 @@
         </div>
     </nav>
 
-    <!-- Chapter Hero -->
-    <header class="chapter-hero chapter-plants-hero">
+    <header class="chapter-hero" style="background: linear-gradient(135deg, #228B22 0%, #006400 100%);">
         <div class="chapter-hero-content">
             <div class="chapter-icon-large">🌿</div>
-            <h1>Pflanzen</h1>
-            <p class="chapter-intro">Heilkräuter, essbare Wildpflanzen, Pilze und wie du giftige Pflanzen erkennst</p>
+            <h1>Heilpflanzen & Wildkräuter</h1>
+            <p class="chapter-intro">Essbare und heilende Pflanzen Europas - nach Ländern und allgemein</p>
         </div>
     </header>
 
-    <!-- Warning -->
-    <div class="chapter-warning">
+    <div class="important-notice">
         <div class="container">
-            <span>⚠️</span>
-            <p><strong>Wichtig:</strong> Esse niemals eine Pflanze, die du nicht 100% sicher identifizieren kannst. Im
-                Zweifel lieber verzichten!</p>
+            <p>⚠️ <strong>Wichtig:</strong> Iss oder verwende niemals eine Pflanze, die du nicht 100% sicher
+                identifizieren kannst!</p>
         </div>
     </div>
 
-    <!-- Table of Contents -->
     <nav class="toc">
         <div class="container">
             <h2>📑 Inhalt</h2>
             <ol class="toc-list">
-                <li><a href="#laender">🗺️ Heilkräuter nach Ländern</a></li>
-                <li><a href="#beeren-laender">🫐 Beeren nach Ländern</a></li>
-                <li><a href="#heilkraeuter">Heilkräuter & Notfall-Kräuter</a></li>
-                <li><a href="#wildbeeren">Essbare Wildbeeren</a></li>
-                <li><a href="../selbst-pflanzen/">🥕 Obst & Gemüse selbst pflanzen</a></li>
-                <li><a href="../nuetzliche-pflanzen/">🧰 Nützliche Pflanzen</a></li>
-                <li><a href="#pilze">Essbare Pilze</a></li>
-                <li><a href="#giftig">Giftige Pflanzen</a></li>
-                <li><a href="#saisonkalender">Saisonkalender</a></li>
+                <li><a href="#laender">🗺️ Heilpflanzen nach Ländern</a></li>
+                <li><a href="#allgemein">🌿 Allgemeine europäische Heilpflanzen</a></li>
+                <li><a href="#giftig">☠️ Giftige Pflanzen</a></li>
             </ol>
         </div>
     </nav>
 
-    <!-- Countries Overview Section - loaded dynamically -->
-    <section id="laender" class="content-section countries-overview countries-section">
-        <div class="container">
-            <!-- Component renders here automatically -->
-            <div id="countries-component" data-base-path=""></div>
-        </div>
-    </section>
-
-    <!-- Berries Countries Overview Section -->
-    <section id="beeren-laender" class="content-section countries-overview countries-section">
-        <div class="container">
-            <!-- Berries Component renders here automatically -->
-            <div id="berries-component" data-base-path="../beeren/"></div>
-        </div>
-    </section>
-
-    <!-- Main Content -->
     <main class="chapter-content">
         <div class="container">
 
-            <!-- Section 1: Heilkräuter -->
-            <section id="heilkraeuter" class="content-section">
-                <h2>🌿 1. Heilkräuter & Notfall-Kräuter</h2>
-                <p class="section-intro">Diese Kräuter kannst du in Europa fast überall finden und für medizinische
-                    Zwecke nutzen.</p>
+            <!-- Section 1: Länderübersicht -->
+            <section id="laender" class="content-section">
+                <h2>🗺️ 1. Heilpflanzen nach Ländern</h2>
+                <p class="section-intro">Wähle ein Land, um regionale Heilpflanzen und deren Besonderheiten zu
+                    entdecken.</p>
+
+                <div class="country-grid">
+                    <a href="deutschland.html" class="country-card">
+                        <span class="country-flag">🇩🇪</span>
+                        <h3>Deutschland</h3>
+                        <p>Kamille, Baldrian, Johanniskraut & mehr</p>
+                    </a>
+                    <a href="oesterreich.html" class="country-card">
+                        <span class="country-flag">🇦🇹</span>
+                        <h3>Österreich</h3>
+                        <p>Alpine Kräuter, Enzian, Arnika</p>
+                    </a>
+                    <a href="schweiz.html" class="country-card">
+                        <span class="country-flag">🇨🇭</span>
+                        <h3>Schweiz</h3>
+                        <p>Bergkräuter, Edelweiß, Zirbe</p>
+                    </a>
+                    <a href="niederlande.html" class="country-card">
+                        <span class="country-flag">🇳🇱</span>
+                        <h3>Niederlande</h3>
+                        <p>Küstenpflanzen, Wiesenkräuter</p>
+                    </a>
+                    <a href="belgien.html" class="country-card">
+                        <span class="country-flag">🇧🇪</span>
+                        <h3>Belgien</h3>
+                        <p>Waldkräuter, Ardennen-Flora</p>
+                    </a>
+                    <a href="frankreich.html" class="country-card">
+                        <span class="country-flag">🇫🇷</span>
+                        <h3>Frankreich</h3>
+                        <p>Lavendel, Thymian, Mittelmeerflora</p>
+                    </a>
+                    <a href="spanien.html" class="country-card">
+                        <span class="country-flag">🇪🇸</span>
+                        <h3>Spanien</h3>
+                        <p>Rosmarin, Oregano, Aloe</p>
+                    </a>
+                    <a href="portugal.html" class="country-card">
+                        <span class="country-flag">🇵🇹</span>
+                        <h3>Portugal</h3>
+                        <p>Atlantikflora, Zistrosen</p>
+                    </a>
+                    <a href="italien.html" class="country-card">
+                        <span class="country-flag">🇮🇹</span>
+                        <h3>Italien</h3>
+                        <p>Basilikum, Salbei, Mittelmeerflora</p>
+                    </a>
+                    <a href="griechenland.html" class="country-card">
+                        <span class="country-flag">🇬🇷</span>
+                        <h3>Griechenland</h3>
+                        <p>Oregano, Mastix, antike Heilkräuter</p>
+                    </a>
+                    <a href="grossbritannien.html" class="country-card">
+                        <span class="country-flag">🇬🇧</span>
+                        <h3>Großbritannien</h3>
+                        <p>Pfefferminze, Heide, Brennnessel</p>
+                    </a>
+                    <a href="skandinavien.html" class="country-card">
+                        <span class="country-flag">🇸🇪</span>
+                        <h3>Skandinavien</h3>
+                        <p>Nordische Flora, Birke, Wacholder</p>
+                    </a>
+                    <a href="polen.html" class="country-card">
+                        <span class="country-flag">🇵🇱</span>
+                        <h3>Polen</h3>
+                        <p>Osteuropäische Kräutertradition</p>
+                    </a>
+                    <a href="tschechien.html" class="country-card">
+                        <span class="country-flag">🇨🇿</span>
+                        <h3>Tschechien</h3>
+                        <p>Böhmische Heilkräuter</p>
+                    </a>
+                    <a href="ukraine.html" class="country-card">
+                        <span class="country-flag">🇺🇦</span>
+                        <h3>Ukraine</h3>
+                        <p>Steppenflora, Kalyna, Sonnenblume</p>
+                    </a>
+                </div>
+            </section>
+
+            <!-- Section 2: Allgemeine europäische Heilpflanzen -->
+            <section id="allgemein" class="content-section">
+                <h2>🌿 2. Allgemeine europäische Heilpflanzen</h2>
+                <p class="section-intro">Diese Heilpflanzen findest du in fast ganz Europa - lerne sie kennen!</p>
 
                 <div class="plant-grid">
-                    <!-- Kamille -->
-                    <article class="plant-card">
-                        <div class="plant-image plant-image-kamille">
-                            <img src="../../assets/images/kamille.png" alt="Echte Kamille - Matricaria chamomilla"
-                                class="plant-photo">
-                        </div>
-                        <div class="plant-info">
-                            <h3>Echte Kamille</h3>
-                            <p class="plant-latin">Matricaria chamomilla</p>
-                            <div class="plant-details">
-                                <div class="plant-section">
-                                    <h4>🔍 Erkennung</h4>
-                                    <ul>
-                                        <li>Weiße Blütenblätter, gelbe gewölbte Mitte</li>
-                                        <li>Hohler Blütenboden (wichtiges Merkmal!)</li>
-                                        <li>Fein gefiederte Blätter</li>
-                                        <li>Charakteristischer süßlicher Duft</li>
-                                    </ul>
-                                </div>
-                                <div class="plant-section">
-                                    <h4>💊 Heilwirkung</h4>
-                                    <ul>
-                                        <li><strong>Beruhigend</strong> - Hilft beim Einschlafen</li>
-                                        <li><strong>Entzündungshemmend</strong> - Wunden, Hautentzündungen</li>
-                                        <li><strong>Magen-Darm</strong> - Bauchschmerzen, Übelkeit</li>
-                                    </ul>
-                                </div>
-                                <div class="plant-section">
-                                    <h4>📋 Anwendung</h4>
-                                    <p><strong>Tee:</strong> 1-2 TL getrocknete Blüten mit heißem Wasser übergießen, 10
-                                        Min. ziehen lassen.</p>
-                                    <p><strong>Umschläge:</strong> Starken Tee abkühlen lassen, Tuch tränken und auf
-                                        Wunden legen.</p>
-                                </div>
-                            </div>
-                            <div class="plant-tags">
-                                <span class="tag tag-safe">Sicher</span>
-                                <span class="tag tag-common">Häufig</span>
-                                <span class="tag tag-spring">März-Sept</span>
-                            </div>
-                        </div>
-                    </article>
-
-                    <!-- Spitzwegerich -->
-                    <article class="plant-card">
-                        <div class="plant-image plant-image-spitzwegerich">
-                            <img src="../../assets/images/spitzwegerich.png" alt="Spitzwegerich - Plantago lanceolata"
-                                class="plant-photo">
-                        </div>
-                        <div class="plant-info">
-                            <h3>Spitzwegerich</h3>
-                            <p class="plant-latin">Plantago lanceolata</p>
-                            <div class="plant-details">
-                                <div class="plant-section">
-                                    <h4>🔍 Erkennung</h4>
-                                    <ul>
-                                        <li>Lange, schmale, lanzettliche Blätter</li>
-                                        <li>5 parallele Blattadern</li>
-                                        <li>Braune Blütenköpfe auf langem Stiel</li>
-                                        <li>Wächst auf Wiesen, Wegen, Rasenflächen</li>
-                                    </ul>
-                                </div>
-                                <div class="plant-section">
-                                    <h4>💊 Heilwirkung</h4>
-                                    <ul>
-                                        <li><strong>Antibakteriell</strong> - Natürliches Antibiotikum</li>
-                                        <li><strong>Wundheilung</strong> - Stoppt Blutungen</li>
-                                        <li><strong>Husten</strong> - Lindert Reizhusten</li>
-                                        <li><strong>Insektenstiche</strong> - Sofortige Linderung</li>
-                                    </ul>
-                                </div>
-                                <div class="plant-section">
-                                    <h4>📋 Anwendung</h4>
-                                    <p><strong>Erste Hilfe:</strong> Blatt zerkauen und auf Wunde/Stich legen - wirkt
-                                        sofort!</p>
-                                    <p><strong>Hustensaft:</strong> Frische Blätter mit Honig vermischen, 24h ziehen
-                                        lassen.</p>
-                                </div>
-                            </div>
-                            <div class="plant-tags">
-                                <span class="tag tag-safe">Sicher</span>
-                                <span class="tag tag-essential">Essentiell</span>
-                                <span class="tag tag-spring">Ganzjährig</span>
-                            </div>
-                        </div>
-                    </article>
-
-                    <!-- Schafgarbe -->
-                    <article class="plant-card">
-                        <div class="plant-image plant-image-schafgarbe">
-                            <img src="../../assets/images/schafgarbe.png" alt="Schafgarbe - Achillea millefolium"
-                                class="plant-photo">
-                        </div>
-                        <div class="plant-info">
-                            <h3>Schafgarbe</h3>
-                            <p class="plant-latin">Achillea millefolium</p>
-                            <div class="plant-details">
-                                <div class="plant-section">
-                                    <h4>🔍 Erkennung</h4>
-                                    <ul>
-                                        <li>Fein gefiederte, farnähnliche Blätter</li>
-                                        <li>Weiße oder rosa Blütendolden</li>
-                                        <li>Aromatischer, leicht bitterer Geruch</li>
-                                        <li>30-60 cm hoch</li>
-                                    </ul>
-                                </div>
-                                <div class="plant-section">
-                                    <h4>💊 Heilwirkung</h4>
-                                    <ul>
-                                        <li><strong>Blutstillend</strong> - Name: "Soldatenkraut"</li>
-                                        <li><strong>Verdauung</strong> - Gallenfluss anregend</li>
-                                        <li><strong>Fiebersenkend</strong> - Schweißtreibend</li>
-                                        <li><strong>Menstruation</strong> - Krampflösend</li>
-                                    </ul>
-                                </div>
-                                <div class="plant-section">
-                                    <h4>📋 Anwendung</h4>
-                                    <p><strong>Wunden:</strong> Frische Blätter zerdrücken und auflegen.</p>
-                                    <p><strong>Tee:</strong> 2 TL Kraut mit 250ml heißem Wasser, 10 Min. ziehen.</p>
-                                </div>
-                            </div>
-                            <div class="plant-tags">
-                                <span class="tag tag-safe">Sicher</span>
-                                <span class="tag tag-common">Häufig</span>
-                                <span class="tag tag-spring">Juni-Sept</span>
-                            </div>
-                        </div>
-                    </article>
-
                     <!-- Brennnessel -->
                     <article class="plant-card">
-                        <div class="plant-image plant-image-brennnessel">
-                            <img src="../../assets/images/brennnessel.png" alt="Brennnessel - Urtica dioica"
-                                class="plant-photo">
+                        <div class="plant-image">
+                            <img src="../../assets/images/heilpflanzen/brennnessel.png" alt="Brennnessel"
+                                class="plant-photo" onerror="this.outerHTML='<span class=\'plant-emoji\'>🌿</span>'">
                         </div>
                         <div class="plant-info">
                             <h3>Brennnessel</h3>
@@ -231,250 +158,179 @@
                             <div class="plant-details">
                                 <div class="plant-section">
                                     <h4>🔍 Erkennung</h4>
-                                    <ul>
-                                        <li>Herzförmige, gezähnte Blätter</li>
-                                        <li>Brennhaare auf Stängel und Blättern</li>
-                                        <li>Grüne hängende Blütenstände</li>
-                                        <li>Wächst fast überall</li>
-                                    </ul>
+                                    <p>Gezähnte Blätter mit Brennhaaren, gegenständig, vierkantige Stängel</p>
                                 </div>
                                 <div class="plant-section">
                                     <h4>💊 Heilwirkung</h4>
-                                    <ul>
-                                        <li><strong>Entwässernd</strong> - Harnwegsinfekte</li>
-                                        <li><strong>Eisenreich</strong> - Gegen Blutarmut</li>
-                                        <li><strong>Entgiftend</strong> - Blutreinigend</li>
-                                        <li><strong>Rheumatisch</strong> - Gelenkschmerzen</li>
-                                    </ul>
-                                </div>
-                                <div class="plant-section">
-                                    <h4>📋 Anwendung</h4>
-                                    <p><strong>Essbar:</strong> Junge Blätter wie Spinat kochen (zerstört Brennhaare).
-                                    </p>
-                                    <p><strong>Tee:</strong> 3 TL frische Blätter, 10 Min. ziehen lassen.</p>
+                                    <p>Blutreinigend, harntreibend, eisenreich. Tee bei Rheuma und Gicht.</p>
                                 </div>
                             </div>
                             <div class="plant-tags">
-                                <span class="tag tag-safe">Sicher</span>
-                                <span class="tag tag-essential">Essentiell</span>
+                                <span class="tag tag-safe">Überall</span>
+                                <span class="tag tag-essential">Essbar</span>
                                 <span class="tag tag-spring">März-Okt</span>
                             </div>
                         </div>
                     </article>
-                </div>
 
-                <!-- Quick Reference Table -->
-                <div class="quick-reference">
-                    <h3>🚑 Schnellreferenz: Welches Kraut wofür?</h3>
-                    <table class="reference-table">
-                        <thead>
-                            <tr>
-                                <th>Problem</th>
-                                <th>Pflanze</th>
-                                <th>Anwendung</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Schnittwunde</td>
-                                <td>Spitzwegerich, Schafgarbe</td>
-                                <td>Blatt zerkauen, auflegen</td>
-                            </tr>
-                            <tr>
-                                <td>Insektenstich</td>
-                                <td>Spitzwegerich</td>
-                                <td>Blatt zerkauen, auflegen</td>
-                            </tr>
-                            <tr>
-                                <td>Magenschmerzen</td>
-                                <td>Kamille</td>
-                                <td>Tee trinken</td>
-                            </tr>
-                            <tr>
-                                <td>Husten</td>
-                                <td>Spitzwegerich, Thymian</td>
-                                <td>Tee oder Sirup</td>
-                            </tr>
-                            <tr>
-                                <td>Schlafprobleme</td>
-                                <td>Kamille, Baldrian</td>
-                                <td>Tee vor dem Schlafen</td>
-                            </tr>
-                            <tr>
-                                <td>Fieber</td>
-                                <td>Schafgarbe, Holunder</td>
-                                <td>Heißer Tee (Schwitzen)</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </section>
-
-            <!-- Section 2: Wildbeeren -->
-            <section id="wildbeeren" class="content-section">
-                <h2>🫐 2. Essbare Wildbeeren</h2>
-                <p class="section-intro">Diese Beeren findest du in europäischen Wäldern und kannst sie sicher essen.
-                    Lerne die Erkennungsmerkmale auswendig!</p>
-
-                <!-- Detailed Berry Cards -->
-                <div class="plant-grid">
-                    <!-- Heidelbeere -->
+                    <!-- Löwenzahn -->
                     <article class="plant-card">
                         <div class="plant-image">
-                            <span class="plant-emoji">🫐</span>
+                            <img src="../../assets/images/heilpflanzen/loewenzahn.png" alt="Löwenzahn"
+                                class="plant-photo" onerror="this.outerHTML='<span class=\'plant-emoji\'>🌼</span>'">
                         </div>
                         <div class="plant-info">
-                            <h3>Heidelbeere (Blaubeere)</h3>
-                            <p class="plant-latin">Vaccinium myrtillus</p>
+                            <h3>Löwenzahn</h3>
+                            <p class="plant-latin">Taraxacum officinale</p>
                             <div class="plant-details">
                                 <div class="plant-section">
                                     <h4>🔍 Erkennung</h4>
-                                    <ul>
-                                        <li>Kleine blaue Beeren mit bereifter Oberfläche</li>
-                                        <li>Färbt Zunge und Finger dunkelblau/violett</li>
-                                        <li>Niedriger Strauch (15-50 cm)</li>
-                                        <li>Kleine ovale Blätter, fein gezähnt</li>
-                                    </ul>
+                                    <p>Gelbe Blüten, gezähnte Blätter, Pusteblume, weißer Milchsaft</p>
                                 </div>
                                 <div class="plant-section">
-                                    <h4>📍 Fundorte</h4>
-                                    <p>Nadelwälder, Heiden, Moore. Sauer Böden, schattige Plätze. Besonders häufig in
-                                        Skandinavien, Alpen und Mittelgebirgen.</p>
-                                </div>
-                                <div class="plant-section">
-                                    <h4>🍽️ Verwendung</h4>
-                                    <ul>
-                                        <li><strong>Roh:</strong> Direkt vom Strauch - köstlich!</li>
-                                        <li><strong>Marmelade:</strong> Mit Zucker einkochen</li>
-                                        <li><strong>Getrocknet:</strong> Gegen Durchfall (Gerbstoffe)</li>
-                                        <li><strong>Tee:</strong> Blätter bei Blasenproblemen</li>
-                                    </ul>
+                                    <h4>💊 Heilwirkung</h4>
+                                    <p>Leberstärkend, verdauungsfördernd, harntreibend. Blätter als Salat.</p>
                                 </div>
                             </div>
                             <div class="plant-tags">
-                                <span class="tag tag-safe">Sehr sicher</span>
-                                <span class="tag tag-common">Häufig</span>
-                                <span class="tag tag-spring">Juli-Sept</span>
+                                <span class="tag tag-safe">Überall</span>
+                                <span class="tag tag-essential">Essbar</span>
+                                <span class="tag tag-spring">April-Okt</span>
                             </div>
                         </div>
                     </article>
 
-                    <!-- Brombeere -->
+                    <!-- Spitzwegerich -->
                     <article class="plant-card">
                         <div class="plant-image">
-                            <span class="plant-emoji">🍇</span>
+                            <img src="../../assets/images/heilpflanzen/spitzwegerich.png" alt="Spitzwegerich"
+                                class="plant-photo" onerror="this.outerHTML='<span class=\'plant-emoji\'>🌱</span>'">
                         </div>
                         <div class="plant-info">
-                            <h3>Brombeere</h3>
-                            <p class="plant-latin">Rubus fruticosus</p>
+                            <h3>Spitzwegerich</h3>
+                            <p class="plant-latin">Plantago lanceolata</p>
                             <div class="plant-details">
                                 <div class="plant-section">
                                     <h4>🔍 Erkennung</h4>
-                                    <ul>
-                                        <li>Schwarze glänzende Sammelfrüchte</li>
-                                        <li>Stachelige Ranken (Vorsicht!)</li>
-                                        <li>Gefiederte Blätter, 3-5 Teilblättchen</li>
-                                        <li>Weiße oder rosa Blüten im Sommer</li>
-                                    </ul>
+                                    <p>Schmale, lanzettliche Blätter mit 5 parallelen Adern, braune Blütenähre</p>
                                 </div>
                                 <div class="plant-section">
-                                    <h4>📍 Fundorte</h4>
-                                    <p>Waldränder, Lichtungen, Hecken, Bahndämme. Überall in Europa. Bildet oft dichte,
-                                        undurchdringliche Dickichte.</p>
-                                </div>
-                                <div class="plant-section">
-                                    <h4>🍽️ Verwendung</h4>
-                                    <ul>
-                                        <li><strong>Roh:</strong> Nur vollreife schwarze Früchte</li>
-                                        <li><strong>Marmelade/Gelee:</strong> Klassische Verwertung</li>
-                                        <li><strong>Blättertee:</strong> Gegen Durchfall, Halsentzündung</li>
-                                        <li><strong>Likör:</strong> Mit Zucker und Alkohol ansetzen</li>
-                                    </ul>
+                                    <h4>💊 Heilwirkung</h4>
+                                    <p>Gegen Husten, Insektenstiche (Blatt zerreiben + auflegen), antibakteriell</p>
                                 </div>
                             </div>
                             <div class="plant-tags">
-                                <span class="tag tag-safe">Sicher</span>
-                                <span class="tag tag-essential">Sehr häufig</span>
-                                <span class="tag tag-spring">Aug-Okt</span>
+                                <span class="tag tag-safe">Überall</span>
+                                <span class="tag tag-essential">Erste Hilfe</span>
+                                <span class="tag tag-spring">Mai-Sept</span>
                             </div>
                         </div>
                     </article>
 
-                    <!-- Himbeere -->
+                    <!-- Kamille -->
                     <article class="plant-card">
                         <div class="plant-image">
-                            <span class="plant-emoji">🔴</span>
+                            <img src="../../assets/images/heilpflanzen/kamille.png" alt="Kamille" class="plant-photo"
+                                onerror="this.outerHTML='<span class=\'plant-emoji\'>🌼</span>'">
                         </div>
                         <div class="plant-info">
-                            <h3>Himbeere</h3>
-                            <p class="plant-latin">Rubus idaeus</p>
+                            <h3>Echte Kamille</h3>
+                            <p class="plant-latin">Matricaria chamomilla</p>
                             <div class="plant-details">
                                 <div class="plant-section">
                                     <h4>🔍 Erkennung</h4>
-                                    <ul>
-                                        <li>Rote samtige Sammelfrüchte</li>
-                                        <li>Löst sich hohl vom Zapfen</li>
-                                        <li>Gefiederte Blätter, Unterseite weißfilzig</li>
-                                        <li>Stängel mit feinen Stacheln</li>
-                                    </ul>
+                                    <p>Weiße Zungenblüten, gelber gewölbter Korb (innen hohl!), intensiver Duft</p>
                                 </div>
                                 <div class="plant-section">
-                                    <h4>📍 Fundorte</h4>
-                                    <p>Lichtungen, Kahlschläge, Waldränder. Liebt nährstoffreiche, frische Böden. In
-                                        ganz Europa verbreitet.</p>
-                                </div>
-                                <div class="plant-section">
-                                    <h4>🍽️ Verwendung</h4>
-                                    <ul>
-                                        <li><strong>Roh:</strong> Aromatisch und süß</li>
-                                        <li><strong>Blättertee:</strong> Traditionell bei Schwangerschaft</li>
-                                        <li><strong>Essig:</strong> Himbeeressig für Salate</li>
-                                    </ul>
+                                    <h4>💊 Heilwirkung</h4>
+                                    <p>Entzündungshemmend, beruhigend, krampflösend. Tee, Dampfbad, Umschläge.</p>
                                 </div>
                             </div>
                             <div class="plant-tags">
-                                <span class="tag tag-safe">Sicher</span>
-                                <span class="tag tag-common">Häufig</span>
-                                <span class="tag tag-spring">Juli-Aug</span>
+                                <span class="tag tag-safe">Felder/Wege</span>
+                                <span class="tag tag-essential">Universal</span>
+                                <span class="tag tag-spring">Mai-Aug</span>
                             </div>
                         </div>
                     </article>
 
-                    <!-- Walderdbeere -->
+                    <!-- Schafgarbe -->
                     <article class="plant-card">
                         <div class="plant-image">
-                            <span class="plant-emoji">🍓</span>
+                            <img src="../../assets/images/heilpflanzen/schafgarbe.png" alt="Schafgarbe"
+                                class="plant-photo" onerror="this.outerHTML='<span class=\'plant-emoji\'>🌸</span>'">
                         </div>
                         <div class="plant-info">
-                            <h3>Walderdbeere</h3>
-                            <p class="plant-latin">Fragaria vesca</p>
+                            <h3>Schafgarbe</h3>
+                            <p class="plant-latin">Achillea millefolium</p>
                             <div class="plant-details">
                                 <div class="plant-section">
                                     <h4>🔍 Erkennung</h4>
-                                    <ul>
-                                        <li>Kleine rote Früchte (5-15mm)</li>
-                                        <li>Samen sitzen AUF der Oberfläche</li>
-                                        <li>Dreiteilige gezähnte Blätter</li>
-                                        <li>Weiße 5-blättrige Blüten</li>
-                                    </ul>
+                                    <p>Fein gefiederte Blätter, weiß-rosa Doldenblüten, aromatischer Geruch</p>
                                 </div>
                                 <div class="plant-section">
-                                    <h4>📍 Fundorte</h4>
-                                    <p>Lichtungen, Waldwege, Böschungen. Ganz Europa. Oft an sonnigen Hängen.</p>
-                                </div>
-                                <div class="plant-section">
-                                    <h4>🍽️ Verwendung</h4>
-                                    <ul>
-                                        <li><strong>Roh:</strong> Extrem aromatisch - intensiver als Gartenerdbeeren!
-                                        </li>
-                                        <li><strong>Blättertee:</strong> Reich an Vitamin C, blutreinigend</li>
-                                    </ul>
+                                    <h4>💊 Heilwirkung</h4>
+                                    <p>Blutstillend (Name: "Achillea"!), verdauungsfördernd, entzündungshemmend</p>
                                 </div>
                             </div>
                             <div class="plant-tags">
-                                <span class="tag tag-safe">Sicher</span>
-                                <span class="tag tag-common">Häufig</span>
-                                <span class="tag tag-spring">Juni-Juli</span>
+                                <span class="tag tag-safe">Wiesen</span>
+                                <span class="tag tag-essential">Erste Hilfe</span>
+                                <span class="tag tag-spring">Juni-Sept</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Holunder -->
+                    <article class="plant-card">
+                        <div class="plant-image">
+                            <img src="../../assets/images/heilpflanzen/holunder.png" alt="Holunder" class="plant-photo"
+                                onerror="this.outerHTML='<span class=\'plant-emoji\'>🌸</span>'">
+                        </div>
+                        <div class="plant-info">
+                            <h3>Holunder</h3>
+                            <p class="plant-latin">Sambucus nigra</p>
+                            <div class="plant-details">
+                                <div class="plant-section">
+                                    <h4>🔍 Erkennung</h4>
+                                    <p>Weißer Blütenschirm (Mai-Juni), schwarze Beeren im Herbst, markiger Stängel</p>
+                                </div>
+                                <div class="plant-section">
+                                    <h4>💊 Heilwirkung</h4>
+                                    <p>Blüten: schweißtreibend bei Erkältung. ⚠️ Beeren NUR GEKOCHT essen!</p>
+                                </div>
+                            </div>
+                            <div class="plant-tags">
+                                <span class="tag tag-caution">Kochen!</span>
+                                <span class="tag tag-essential">Erkältung</span>
+                                <span class="tag tag-spring">Mai + Sept</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Johanniskraut -->
+                    <article class="plant-card">
+                        <div class="plant-image">
+                            <img src="../../assets/images/heilpflanzen/johanniskraut.png" alt="Johanniskraut"
+                                class="plant-photo" onerror="this.outerHTML='<span class=\'plant-emoji\'>🌼</span>'">
+                        </div>
+                        <div class="plant-info">
+                            <h3>Johanniskraut</h3>
+                            <p class="plant-latin">Hypericum perforatum</p>
+                            <div class="plant-details">
+                                <div class="plant-section">
+                                    <h4>🔍 Erkennung</h4>
+                                    <p>Gelbe Blüten mit schwarzen Punkten, Blätter gegen Licht: viele kleine Löcher</p>
+                                </div>
+                                <div class="plant-section">
+                                    <h4>💊 Heilwirkung</h4>
+                                    <p>Stimmungsaufhellend, wundheilend (Rotöl). ⚠️ Macht lichtempfindlich!</p>
+                                </div>
+                            </div>
+                            <div class="plant-tags">
+                                <span class="tag tag-caution">Lichtsensibel</span>
+                                <span class="tag tag-essential">Psyche</span>
+                                <span class="tag tag-spring">Juni-Aug</span>
                             </div>
                         </div>
                     </article>
@@ -482,7 +338,8 @@
                     <!-- Hagebutte -->
                     <article class="plant-card">
                         <div class="plant-image">
-                            <span class="plant-emoji">🌹</span>
+                            <img src="../../assets/images/heilpflanzen/hagebutte.png" alt="Hagebutte"
+                                class="plant-photo" onerror="this.outerHTML='<span class=\'plant-emoji\'>🌹</span>'">
                         </div>
                         <div class="plant-info">
                             <h3>Hagebutte</h3>
@@ -490,1048 +347,167 @@
                             <div class="plant-details">
                                 <div class="plant-section">
                                     <h4>🔍 Erkennung</h4>
-                                    <ul>
-                                        <li>Rote, ovale Scheinfrüchte</li>
-                                        <li>An stacheligen Wildrosen-Sträuchern</li>
-                                        <li>Innen viele behaarte Nüsschen (Jucken!)</li>
-                                        <li>Gefiederte Blätter mit 5-7 Teilblättchen</li>
-                                    </ul>
+                                    <p>Rote ovale Früchte an Wildrosen, stacheliger Strauch, gefiederte Blätter</p>
                                 </div>
                                 <div class="plant-section">
-                                    <h4>📍 Fundorte</h4>
-                                    <p>Hecken, Waldränder, Böschungen. Ganz Europa. Extrem winterhart.</p>
-                                </div>
-                                <div class="plant-section">
-                                    <h4>🍽️ Verwendung</h4>
-                                    <ul>
-                                        <li><strong>Vitamin C Bombe:</strong> 20x mehr als Zitronen!</li>
-                                        <li><strong>Mus:</strong> Entkernt und püriert</li>
-                                        <li><strong>Tee:</strong> Getrocknet, immunstärkend</li>
-                                        <li><strong>Nach Frost:</strong> Dann weicher und süßer</li>
-                                    </ul>
+                                    <h4>💊 Heilwirkung</h4>
+                                    <p>Vitamin C Bombe! 20x mehr als Zitronen. Tee, Mus, immunstärkend.</p>
                                 </div>
                             </div>
                             <div class="plant-tags">
-                                <span class="tag tag-safe">Sicher</span>
+                                <span class="tag tag-safe">Hecken</span>
                                 <span class="tag tag-essential">Vitamin C</span>
                                 <span class="tag tag-spring">Sept-Nov</span>
                             </div>
                         </div>
                     </article>
-
-                    <!-- Holunderbeere -->
-                    <article class="plant-card">
-                        <div class="plant-image">
-                            <span class="plant-emoji">⚫</span>
-                        </div>
-                        <div class="plant-info">
-                            <h3>Holunderbeere</h3>
-                            <p class="plant-latin">Sambucus nigra</p>
-                            <div class="plant-details">
-                                <div class="plant-section">
-                                    <h4>🔍 Erkennung</h4>
-                                    <ul>
-                                        <li>Kleine schwarze Beeren in Dolden</li>
-                                        <li>Roter Saft</li>
-                                        <li>Großer Strauch/kleiner Baum</li>
-                                        <li>Gefiederte Blätter, strenger Geruch</li>
-                                    </ul>
-                                </div>
-                                <div class="plant-section">
-                                    <h4>📍 Fundorte</h4>
-                                    <p>Waldränder, Gärten, Ruderalflächen. Ganz Europa. Zeigt stickstoffreiche Böden an.
-                                    </p>
-                                </div>
-                                <div class="plant-section">
-                                    <h4>🍽️ Verwendung</h4>
-                                    <ul>
-                                        <li><strong>⚠️ NUR GEKOCHT!</strong> Roh leicht giftig</li>
-                                        <li><strong>Saft:</strong> Gegen Erkältung, schweißtreibend</li>
-                                        <li><strong>Marmelade:</strong> Mit Äpfeln mischen</li>
-                                        <li><strong>Blüten:</strong> Holunderblütensirup, Sekt</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="plant-tags">
-                                <span class="tag tag-caution">Nur gekocht!</span>
-                                <span class="tag tag-essential">Heilpflanze</span>
-                                <span class="tag tag-spring">Sept-Okt</span>
-                            </div>
-                        </div>
-                    </article>
-
-                    <!-- Schlehe -->
-                    <article class="plant-card">
-                        <div class="plant-image">
-                            <span class="plant-emoji">🔵</span>
-                        </div>
-                        <div class="plant-info">
-                            <h3>Schlehe (Schwarzdorn)</h3>
-                            <p class="plant-latin">Prunus spinosa</p>
-                            <div class="plant-details">
-                                <div class="plant-section">
-                                    <h4>🔍 Erkennung</h4>
-                                    <ul>
-                                        <li>Kleine blaue Steinfrüchte, stark bereift</li>
-                                        <li>Sehr dorniger Strauch</li>
-                                        <li>Kleine ovale Blätter</li>
-                                        <li>Weiße Blüten VOR Blattaustrieb</li>
-                                    </ul>
-                                </div>
-                                <div class="plant-section">
-                                    <h4>📍 Fundorte</h4>
-                                    <p>Hecken, Waldränder, Böschungen. Bildet undurchdringliche Dickichte. Ganz Europa.
-                                    </p>
-                                </div>
-                                <div class="plant-section">
-                                    <h4>🍽️ Verwendung</h4>
-                                    <ul>
-                                        <li><strong>Nach Frost:</strong> Erst dann weich und genießbar</li>
-                                        <li><strong>Schlehenlikör:</strong> Klassiker mit Zucker und Korn</li>
-                                        <li><strong>Marmelade:</strong> Sehr herb, vitamin-reich</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="plant-tags">
-                                <span class="tag tag-safe">Sicher</span>
-                                <span class="tag tag-common">Häufig</span>
-                                <span class="tag tag-spring">Okt-Nov</span>
-                            </div>
-                        </div>
-                    </article>
-
-                    <!-- Preiselbeere -->
-                    <article class="plant-card">
-                        <div class="plant-image">
-                            <span class="plant-emoji">🔴</span>
-                        </div>
-                        <div class="plant-info">
-                            <h3>Preiselbeere</h3>
-                            <p class="plant-latin">Vaccinium vitis-idaea</p>
-                            <div class="plant-details">
-                                <div class="plant-section">
-                                    <h4>🔍 Erkennung</h4>
-                                    <ul>
-                                        <li>Kleine rote Beeren in Trauben</li>
-                                        <li>Immergrüne ledrige Blätter</li>
-                                        <li>Niedriger Zwergstrauch (10-30 cm)</li>
-                                        <li>Blattunterseite punktiert</li>
-                                    </ul>
-                                </div>
-                                <div class="plant-section">
-                                    <h4>📍 Fundorte</h4>
-                                    <p>Nadelwälder, Heiden. Nordeuropa, Alpen, Mittelgebirge. Oft zusammen mit
-                                        Heidelbeeren.</p>
-                                </div>
-                                <div class="plant-section">
-                                    <h4>🍽️ Verwendung</h4>
-                                    <ul>
-                                        <li><strong>Kompott:</strong> Klassisch zu Wild</li>
-                                        <li><strong>Marmelade:</strong> Herb-süß, sehr haltbar</li>
-                                        <li><strong>Tee:</strong> Blätter bei Blasenproblemen</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="plant-tags">
-                                <span class="tag tag-safe">Sicher</span>
-                                <span class="tag tag-common">Nordisch</span>
-                                <span class="tag tag-spring">Aug-Okt</span>
-                            </div>
-                        </div>
-                    </article>
-                </div>
-
-                <!-- Saisonkalender -->
-                <div class="quick-reference">
-                    <h3>📅 Beeren-Saisonkalender</h3>
-                    <table class="reference-table">
-                        <thead>
-                            <tr>
-                                <th>Beere</th>
-                                <th>Jun</th>
-                                <th>Jul</th>
-                                <th>Aug</th>
-                                <th>Sep</th>
-                                <th>Okt</th>
-                                <th>Nov</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Walderdbeere</td>
-                                <td>🍓</td>
-                                <td>🍓</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td>Himbeere</td>
-                                <td></td>
-                                <td>🔴</td>
-                                <td>🔴</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td>Heidelbeere</td>
-                                <td></td>
-                                <td>🫐</td>
-                                <td>🫐</td>
-                                <td>🫐</td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td>Brombeere</td>
-                                <td></td>
-                                <td></td>
-                                <td>🍇</td>
-                                <td>🍇</td>
-                                <td>🍇</td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td>Preiselbeere</td>
-                                <td></td>
-                                <td></td>
-                                <td>🔴</td>
-                                <td>🔴</td>
-                                <td>🔴</td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td>Holunderbeere</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td>⚫</td>
-                                <td>⚫</td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td>Hagebutte</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td>🌹</td>
-                                <td>🌹</td>
-                                <td>🌹</td>
-                            </tr>
-                            <tr>
-                                <td>Schlehe</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td>🔵</td>
-                                <td>🔵</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-
-                <!-- Danger Box -->
-                <div class="danger-box">
-                    <h3>☠️ NIEMALS essen - Giftige Beeren</h3>
-                    <p class="section-intro" style="color: inherit;">Diese Beeren können tödlich sein! Lerne sie
-                        unbedingt zu unterscheiden.</p>
-                    <div class="danger-grid">
-                        <div class="danger-item">
-                            <strong>Tollkirsche</strong>
-                            <p>Glänzend schwarz, kirschgroß, süßlich. 3-4 Beeren = tödlich für Kinder!</p>
-                        </div>
-                        <div class="danger-item">
-                            <strong>Einbeere</strong>
-                            <p>EINE einzelne schwarze Beere auf 4-blättrigem Quirl. Auffällig!</p>
-                        </div>
-                        <div class="danger-item">
-                            <strong>Liguster</strong>
-                            <p>Schwarze Beeren in Trauben. Heckenstrauch, oft in Gärten.</p>
-                        </div>
-                        <div class="danger-item">
-                            <strong>Pfaffenhütchen</strong>
-                            <p>Orange-rosa vierkantige Kapseln. Sehr giftig!</p>
-                        </div>
-                        <div class="danger-item">
-                            <strong>Seidelbast</strong>
-                            <p>Leuchtend rote Beeren am Stängel. Extrem giftig!</p>
-                        </div>
-                        <div class="danger-item">
-                            <strong>Maiglöckchen</strong>
-                            <p>Rote Beeren nach weißen Blüten. Herzgiftig!</p>
-                        </div>
-                    </div>
                 </div>
             </section>
 
-            <!-- Section 4: Obst & Gemüse selbst pflanzen -->
-            <section id="selbst-pflanzen" class="content-section">
-                <h2>🥕 4. Obst & Gemüse selbst pflanzen</h2>
-                <p class="section-intro">Eigenanbau als wichtigste Nahrungsquelle in Krisenzeiten - Von der Fensterbank
-                    bis zum Notfall-Garten.</p>
-                <div style="text-align: center; padding: 2rem;">
-                    <a href="../selbst-pflanzen/" class="btn btn-primary" style="font-size: 1.2rem;">
-                        🥕 Zum Anbau-Ratgeber →
+            <!-- Section 3: Giftige Pflanzen -->
+            <section id="giftig" class="content-section"
+                style="background: linear-gradient(135deg, #8B0000 0%, #DC143C 100%); padding: 2rem; border-radius: 12px; margin-top: 2rem;">
+                <h2 style="color: white;">☠️ 3. Giftige Pflanzen - LEBENSGEFAHR</h2>
+                <p class="section-intro" style="color: #ffcccc;">Diese Pflanzen sind gefährlich und sollten gemieden
+                    werden! NIEMALS anfassen
+                    oder essen!</p>
+
+                <div class="plant-grid">
+                    <!-- Schierling -->
+                    <article class="plant-card">
+                        <div class="plant-image">
+                            <img src="../../assets/images/giftig/schierling.png" alt="Gefleckter Schierling"
+                                class="plant-photo" onerror="this.outerHTML='<span class=\'plant-emoji\'>☠️</span>'">
+                        </div>
+                        <div class="plant-info">
+                            <h3>Gefleckter Schierling</h3>
+                            <p class="plant-latin">Conium maculatum</p>
+                            <div class="plant-details">
+                                <div class="plant-section">
+                                    <h4>🔍 Erkennung</h4>
+                                    <p>Rot gefleckter Stängel, karottenähnliche Blätter, unangenehmer Geruch</p>
+                                </div>
+                                <div class="plant-section">
+                                    <h4>⚠️ Gefahr</h4>
+                                    <p>TÖDLICH! Alle Pflanzenteile giftig. Lähmung der Atemmuskulatur.</p>
+                                </div>
+                            </div>
+                            <div class="plant-tags">
+                                <span class="tag tag-danger">TÖDLICH</span>
+                                <span class="tag tag-danger">Nicht anfassen</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Eisenhut -->
+                    <article class="plant-card">
+                        <div class="plant-image">
+                            <img src="../../assets/images/giftig/eisenhut.png" alt="Blauer Eisenhut" class="plant-photo"
+                                onerror="this.outerHTML='<span class=\'plant-emoji\'>☠️</span>'">
+                        </div>
+                        <div class="plant-info">
+                            <h3>Blauer Eisenhut</h3>
+                            <p class="plant-latin">Aconitum napellus</p>
+                            <div class="plant-details">
+                                <div class="plant-section">
+                                    <h4>🔍 Erkennung</h4>
+                                    <p>Blaue "Helm"-förmige Blüten, handförmig geteilte Blätter</p>
+                                </div>
+                                <div class="plant-section">
+                                    <h4>⚠️ Gefahr</h4>
+                                    <p>GIFTIGSTE PFLANZE EUROPAS! Schon Hautkontakt kann Vergiftung verursachen!</p>
+                                </div>
+                            </div>
+                            <div class="plant-tags">
+                                <span class="tag tag-danger">TÖDLICH</span>
+                                <span class="tag tag-danger">Hautkontakt vermeiden</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Tollkirsche -->
+                    <article class="plant-card">
+                        <div class="plant-image">
+                            <img src="../../assets/images/giftig/tollkirsche.png" alt="Tollkirsche" class="plant-photo"
+                                onerror="this.outerHTML='<span class=\'plant-emoji\'>☠️</span>'">
+                        </div>
+                        <div class="plant-info">
+                            <h3>Tollkirsche</h3>
+                            <p class="plant-latin">Atropa belladonna</p>
+                            <div class="plant-details">
+                                <div class="plant-section">
+                                    <h4>🔍 Erkennung</h4>
+                                    <p>Glänzend schwarze, kirschgroße Beeren, große ovale Blätter</p>
+                                </div>
+                                <div class="plant-section">
+                                    <h4>⚠️ Gefahr</h4>
+                                    <p>3-4 Beeren sind TÖDLICH für Kinder! Süßlicher Geschmack täuscht.</p>
+                                </div>
+                            </div>
+                            <div class="plant-tags">
+                                <span class="tag tag-danger">TÖDLICH</span>
+                                <span class="tag tag-danger">Kinder gefährdet</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Fingerhut -->
+                    <article class="plant-card">
+                        <div class="plant-image">
+                            <img src="../../assets/images/giftig/fingerhut.png" alt="Fingerhut" class="plant-photo"
+                                onerror="this.outerHTML='<span class=\'plant-emoji\'>☠️</span>'">
+                        </div>
+                        <div class="plant-info">
+                            <h3>Fingerhut</h3>
+                            <p class="plant-latin">Digitalis purpurea</p>
+                            <div class="plant-details">
+                                <div class="plant-section">
+                                    <h4>🔍 Erkennung</h4>
+                                    <p>Purpurne Glockenblüten in Trauben, große behaarte Blätter</p>
+                                </div>
+                                <div class="plant-section">
+                                    <h4>⚠️ Gefahr</h4>
+                                    <p>Starkes HERZGIFT! Schon wenige Blätter können tödlich sein.</p>
+                                </div>
+                            </div>
+                            <div class="plant-tags">
+                                <span class="tag tag-danger">TÖDLICH</span>
+                                <span class="tag tag-danger">Herzgift</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <!-- Weitere Kapitel Links -->
+            <section class="content-section related-chapters">
+                <h2>📚 Weitere Kapitel</h2>
+                <div class="chapter-links">
+                    <a href="../beeren/" class="chapter-link">
+                        <span class="link-icon">🫐</span>
+                        <span class="link-text">Essbare Beeren</span>
                     </a>
-                    <p style="margin-top: 1rem; color: #666;">13+ Gemüsesorten, Obst, Notfall-Garten & Aussaatkalender
-                    </p>
+                    <a href="../selbst-pflanzen/" class="chapter-link">
+                        <span class="link-icon">🥕</span>
+                        <span class="link-text">Selbst pflanzen</span>
+                    </a>
+                    <a href="../nuetzliche-pflanzen/" class="chapter-link">
+                        <span class="link-icon">🧰</span>
+                        <span class="link-text">Nützliche Pflanzen</span>
+                    </a>
                 </div>
             </section>
 
-
-            <p class="plant-latin">Raphanus sativus var. sativus</p>
-            <div class="plant-details">
-                <div class="plant-section">
-                    <h4>⏱️ Ernte</h4>
-                    <p><strong>3-4 Wochen</strong> - Das schnellste Gemüse!</p>
-                </div>
-                <div class="plant-section">
-                    <h4>📋 Anleitung</h4>
-                    <ul>
-                        <li><strong>Aussaat:</strong> Direkt ins Beet, 1cm tief, 3cm Abstand</li>
-                        <li><strong>Wann:</strong> März-September, alle 2 Wochen nachsäen</li>
-                        <li><strong>Pflege:</strong> Feucht halten, nicht zu dicht</li>
-                    </ul>
-                </div>
-                <div class="plant-section">
-                    <h4>💡 Tipps</h4>
-                    <p>Auch auf Balkon in Töpfen! Blätter essbar als Salat.</p>
-                </div>
-            </div>
-            <div class="plant-tags">
-                <span class="tag tag-essential">Anfänger</span>
-                <span class="tag tag-safe">3-4 Wochen</span>
-            </div>
         </div>
-        </article>
-
-        <!-- Salat -->
-        <article class="plant-card">
-            <div class="plant-image">
-                <span class="plant-emoji">🥬</span>
-            </div>
-            <div class="plant-info">
-                <h3>Pflücksalat</h3>
-                <p class="plant-latin">Lactuca sativa var. crispa</p>
-                <div class="plant-details">
-                    <div class="plant-section">
-                        <h4>⏱️ Ernte</h4>
-                        <p><strong>4-6 Wochen</strong> - Immer wieder ernten!</p>
-                    </div>
-                    <div class="plant-section">
-                        <h4>📋 Anleitung</h4>
-                        <ul>
-                            <li><strong>Aussaat:</strong> Lichtkeimer! Nur andrücken, nicht bedecken</li>
-                            <li><strong>Wann:</strong> März-August</li>
-                            <li><strong>Pflege:</strong> Nur äußere Blätter ernten, Herz stehen lassen</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="plant-tags">
-                    <span class="tag tag-essential">Lichtkeimer</span>
-                    <span class="tag tag-safe">4-6 Wochen</span>
-                </div>
-            </div>
-        </article>
-
-        <!-- Rucola -->
-        <article class="plant-card">
-            <div class="plant-image">
-                <span class="plant-emoji">🥗</span>
-            </div>
-            <div class="plant-info">
-                <h3>Rucola</h3>
-                <p class="plant-latin">Eruca sativa</p>
-                <div class="plant-details">
-                    <div class="plant-section">
-                        <h4>⏱️ Ernte</h4>
-                        <p><strong>3-4 Wochen</strong></p>
-                    </div>
-                    <div class="plant-section">
-                        <h4>📋 Anleitung</h4>
-                        <ul>
-                            <li><strong>Aussaat:</strong> Direkt ins Beet, dünn verteilen</li>
-                            <li><strong>Wann:</strong> März-September</li>
-                            <li><strong>Pflege:</strong> Regelmäßig schneiden fördert Nachwuchs</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="plant-tags">
-                    <span class="tag tag-safe">Robust</span>
-                    <span class="tag tag-spring">3-4 Wochen</span>
-                </div>
-            </div>
-        </article>
-
-        <!-- Spinat -->
-        <article class="plant-card">
-            <div class="plant-image">
-                <span class="plant-emoji">🥬</span>
-            </div>
-            <div class="plant-info">
-                <h3>Spinat</h3>
-                <p class="plant-latin">Spinacia oleracea</p>
-                <div class="plant-details">
-                    <div class="plant-section">
-                        <h4>⏱️ Ernte</h4>
-                        <p><strong>6-8 Wochen</strong></p>
-                    </div>
-                    <div class="plant-section">
-                        <h4>📋 Anleitung</h4>
-                        <ul>
-                            <li><strong>Aussaat:</strong> Direkt ins Beet, 2cm tief</li>
-                            <li><strong>Wann:</strong> März-April oder Sept-Okt (mag keine Hitze!)</li>
-                            <li><strong>Pflege:</strong> Feucht halten, Halbschatten bei Hitze</li>
-                        </ul>
-                    </div>
-                    <div class="plant-section">
-                        <h4>💡 Tipps</h4>
-                        <p>Sehr nahrhaft! Wintersorte übersteht Frost.</p>
-                    </div>
-                </div>
-                <div class="plant-tags">
-                    <span class="tag tag-essential">Nahrhaft</span>
-                    <span class="tag tag-spring">Frühj./Herbst</span>
-                </div>
-            </div>
-        </article>
-        </div>
-
-        <!-- Wichtige Grundnahrungsmittel -->
-        <h3>🥔 Grundnahrungsmittel (längere Kulturdauer)</h3>
-        <p>Diese Pflanzen brauchen mehr Zeit, liefern aber mehr Kalorien.</p>
-
-        <div class="plant-grid">
-            <!-- Kartoffeln -->
-            <article class="plant-card">
-                <div class="plant-image">
-                    <span class="plant-emoji">🥔</span>
-                </div>
-                <div class="plant-info">
-                    <h3>Kartoffeln</h3>
-                    <p class="plant-latin">Solanum tuberosum</p>
-                    <div class="plant-details">
-                        <div class="plant-section">
-                            <h4>⏱️ Ernte</h4>
-                            <p><strong>3-4 Monate</strong> - Früh: 70 Tage, Spät: 120 Tage</p>
-                        </div>
-                        <div class="plant-section">
-                            <h4>📋 Anleitung</h4>
-                            <ul>
-                                <li><strong>Pflanzung:</strong> April-Mai, 10cm tief, 35cm Abstand</li>
-                                <li><strong>Vorkeimen:</strong> 4 Wochen hell bei 10-15°C</li>
-                                <li><strong>Anhäufeln:</strong> Wenn 15cm hoch, Erde anhäufeln!</li>
-                                <li><strong>Ernte:</strong> Wenn Kraut welkt, 2 Wochen warten</li>
-                            </ul>
-                        </div>
-                        <div class="plant-section">
-                            <h4>💡 Notfall-Tipp</h4>
-                            <p>Auch in Eimern/Säcken möglich! 1 Kartoffel = 2-3 kg Ertrag.</p>
-                        </div>
-                    </div>
-                    <div class="plant-tags">
-                        <span class="tag tag-essential">Grundnahrung</span>
-                        <span class="tag tag-common">Lagerfähig</span>
-                    </div>
-                </div>
-            </article>
-
-            <!-- Bohnen -->
-            <article class="plant-card">
-                <div class="plant-image">
-                    <span class="plant-emoji">🫘</span>
-                </div>
-                <div class="plant-info">
-                    <h3>Bohnen (Busch- & Stangen)</h3>
-                    <p class="plant-latin">Phaseolus vulgaris</p>
-                    <div class="plant-details">
-                        <div class="plant-section">
-                            <h4>⏱️ Ernte</h4>
-                            <p><strong>8-12 Wochen</strong></p>
-                        </div>
-                        <div class="plant-section">
-                            <h4>📋 Anleitung</h4>
-                            <ul>
-                                <li><strong>Aussaat:</strong> Nach Eisheiligen! Frost = Tod</li>
-                                <li><strong>Tiefe:</strong> 3cm, 3 Samen pro Stelle</li>
-                                <li><strong>Stangenbohnen:</strong> Kletterhilfe 2m hoch</li>
-                                <li><strong>Ernte:</strong> Jung pflücken, dann kommen mehr nach</li>
-                            </ul>
-                        </div>
-                        <div class="plant-section">
-                            <h4>💡 Tipps</h4>
-                            <p>Proteinreich! Ausreifen lassen = lagerfähige Trockenbohnen.</p>
-                        </div>
-                    </div>
-                    <div class="plant-tags">
-                        <span class="tag tag-essential">Protein</span>
-                        <span class="tag tag-caution">Frostempfindlich</span>
-                    </div>
-                </div>
-            </article>
-
-            <!-- Zucchini -->
-            <article class="plant-card">
-                <div class="plant-image">
-                    <span class="plant-emoji">🥒</span>
-                </div>
-                <div class="plant-info">
-                    <h3>Zucchini</h3>
-                    <p class="plant-latin">Cucurbita pepo</p>
-                    <div class="plant-details">
-                        <div class="plant-section">
-                            <h4>⏱️ Ernte</h4>
-                            <p><strong>6-8 Wochen</strong> nach Pflanzung - Extrem ertragreich!</p>
-                        </div>
-                        <div class="plant-section">
-                            <h4>📋 Anleitung</h4>
-                            <ul>
-                                <li><strong>Aussaat:</strong> Vorziehen April oder direkt Mai</li>
-                                <li><strong>Platz:</strong> 1 Pflanze braucht 1m² Platz!</li>
-                                <li><strong>Pflege:</strong> Viel Wasser und Kompost</li>
-                                <li><strong>Ernte:</strong> Jung ernten (15-20cm), täglich kontrollieren</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="plant-tags">
-                        <span class="tag tag-essential">Ertragreich!</span>
-                        <span class="tag tag-safe">6-8 Wochen</span>
-                    </div>
-                </div>
-            </article>
-
-            <!-- Tomaten -->
-            <article class="plant-card">
-                <div class="plant-image">
-                    <span class="plant-emoji">🍅</span>
-                </div>
-                <div class="plant-info">
-                    <h3>Tomaten</h3>
-                    <p class="plant-latin">Solanum lycopersicum</p>
-                    <div class="plant-details">
-                        <div class="plant-section">
-                            <h4>⏱️ Ernte</h4>
-                            <p><strong>3-4 Monate</strong> nach Aussaat</p>
-                        </div>
-                        <div class="plant-section">
-                            <h4>📋 Anleitung</h4>
-                            <ul>
-                                <li><strong>Vorziehen:</strong> März-April auf Fensterbank</li>
-                                <li><strong>Auspflanzen:</strong> Nach Eisheiligen, regengeschützt!</li>
-                                <li><strong>Ausgeizen:</strong> Seitentriebe in Blattachseln entfernen</li>
-                                <li><strong>Stützen:</strong> Stab oder Schnur nach oben</li>
-                            </ul>
-                        </div>
-                        <div class="plant-section">
-                            <h4>💡 Tipps</h4>
-                            <p>Buschtomate = kein Ausgeizen, ideal für Anfänger. Regenschutz wichtig
-                                (Braunfäule)!</p>
-                        </div>
-                    </div>
-                    <div class="plant-tags">
-                        <span class="tag tag-common">Beliebt</span>
-                        <span class="tag tag-caution">Braucht Übung</span>
-                    </div>
-                </div>
-            </article>
-
-            <!-- Kürbis -->
-            <article class="plant-card">
-                <div class="plant-image">
-                    <span class="plant-emoji">🎃</span>
-                </div>
-                <div class="plant-info">
-                    <h3>Kürbis</h3>
-                    <p class="plant-latin">Cucurbita maxima / moschata</p>
-                    <div class="plant-details">
-                        <div class="plant-section">
-                            <h4>⏱️ Ernte</h4>
-                            <p><strong>3-4 Monate</strong></p>
-                        </div>
-                        <div class="plant-section">
-                            <h4>📋 Anleitung</h4>
-                            <ul>
-                                <li><strong>Aussaat:</strong> Mai direkt oder April vorziehen</li>
-                                <li><strong>Platz:</strong> Viel! Ranken werden 3-5m lang</li>
-                                <li><strong>Ernte:</strong> Wenn Stiel holzig, vor Frost</li>
-                                <li><strong>Lagerung:</strong> Bis zu 6 Monate möglich!</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="plant-tags">
-                        <span class="tag tag-essential">Lagerfähig</span>
-                        <span class="tag tag-common">Kalorienreich</span>
-                    </div>
-                </div>
-            </article>
-
-            <!-- Möhren -->
-            <article class="plant-card">
-                <div class="plant-image">
-                    <span class="plant-emoji">🥕</span>
-                </div>
-                <div class="plant-info">
-                    <h3>Möhren</h3>
-                    <p class="plant-latin">Daucus carota</p>
-                    <div class="plant-details">
-                        <div class="plant-section">
-                            <h4>⏱️ Ernte</h4>
-                            <p><strong>3-4 Monate</strong></p>
-                        </div>
-                        <div class="plant-section">
-                            <h4>📋 Anleitung</h4>
-                            <ul>
-                                <li><strong>Aussaat:</strong> März-Juli, in Reihen, dünn!</li>
-                                <li><strong>Keimung:</strong> Dauert 2-3 Wochen (Geduld!)</li>
-                                <li><strong>Boden:</strong> Tiefgründig, keine Steine (sonst krumm)</li>
-                                <li><strong>Trick:</strong> Mit Radieschen mischen (Reihen markieren!)</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="plant-tags">
-                        <span class="tag tag-common">Lagerfähig</span>
-                        <span class="tag tag-spring">Vitamin A</span>
-                    </div>
-                </div>
-            </article>
-        </div>
-
-        <!-- Einfaches Obst -->
-        <h3>🍓 Einfaches Obst für den Garten</h3>
-
-        <div class="plant-grid">
-            <!-- Erdbeeren -->
-            <article class="plant-card">
-                <div class="plant-image">
-                    <span class="plant-emoji">🍓</span>
-                </div>
-                <div class="plant-info">
-                    <h3>Erdbeeren</h3>
-                    <p class="plant-latin">Fragaria × ananassa</p>
-                    <div class="plant-details">
-                        <div class="plant-section">
-                            <h4>📋 Anleitung</h4>
-                            <ul>
-                                <li><strong>Pflanzung:</strong> August oder März</li>
-                                <li><strong>Ernte:</strong> Ab 2. Jahr richtig ertragreich</li>
-                                <li><strong>Vermehrung:</strong> Ausläufer bewurzeln - kostenlose Pflanzen!</li>
-                                <li><strong>Mulchen:</strong> Stroh unter Früchte (Schimmel vermeiden)</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="plant-tags">
-                        <span class="tag tag-essential">Mehrjährig</span>
-                        <span class="tag tag-safe">Balkon-geeignet</span>
-                    </div>
-                </div>
-            </article>
-
-            <!-- Himbeeren -->
-            <article class="plant-card">
-                <div class="plant-image">
-                    <span class="plant-emoji">🔴</span>
-                </div>
-                <div class="plant-info">
-                    <h3>Himbeeren</h3>
-                    <p class="plant-latin">Rubus idaeus</p>
-                    <div class="plant-details">
-                        <div class="plant-section">
-                            <h4>📋 Anleitung</h4>
-                            <ul>
-                                <li><strong>Pflanzung:</strong> Herbst oder Frühjahr</li>
-                                <li><strong>Sommer-H.:</strong> Tragen an 2-jährigen Ruten</li>
-                                <li><strong>Herbst-H.:</strong> Tragen an 1-jährigen Ruten (einfacher!)</li>
-                                <li><strong>Schnitt:</strong> Abgetragene Ruten bodennah abschneiden</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="plant-tags">
-                        <span class="tag tag-essential">Pflegeleicht</span>
-                        <span class="tag tag-common">Breitet sich aus</span>
-                    </div>
-                </div>
-            </article>
-
-            <!-- Johannisbeeren -->
-            <article class="plant-card">
-                <div class="plant-image">
-                    <span class="plant-emoji">🔴</span>
-                </div>
-                <div class="plant-info">
-                    <h3>Johannisbeeren</h3>
-                    <p class="plant-latin">Ribes rubrum / nigrum</p>
-                    <div class="plant-details">
-                        <div class="plant-section">
-                            <h4>📋 Anleitung</h4>
-                            <ul>
-                                <li><strong>Sorten:</strong> Rot, Weiß, Schwarz (Vitamin C Bombe!)</li>
-                                <li><strong>Pflege:</strong> Fast keine! Jährlich alte Triebe entfernen</li>
-                                <li><strong>Ernte:</strong> Juni-Juli (rot/weiß), Juli-Aug (schwarz)</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="plant-tags">
-                        <span class="tag tag-essential">Pflegeleicht</span>
-                        <span class="tag tag-safe">Vitamin C</span>
-                    </div>
-                </div>
-            </article>
-        </div>
-
-        <!-- Notfall-Garten Tipps -->
-        <div class="info-card"
-            style="background: linear-gradient(135deg, #f0fff4 0%, #e8f5e9 100%); border-left: 4px solid #2e7d32;">
-            <h3>🆘 Notfall-Garten: Wenn es schnell gehen muss</h3>
-            <div class="info-grid">
-                <div class="info-item">
-                    <h4>🚀 Sofort starten</h4>
-                    <ul>
-                        <li>Radieschen, Kresse, Rucola - in 3-4 Wochen erntereif</li>
-                        <li>Kartoffeln: Jede keimende Kartoffel einpflanzen!</li>
-                        <li>Zwiebeln: Keimende Küchenzwiebeln = Lauchzwiebeln in 2 Wochen</li>
-                    </ul>
-                </div>
-                <div class="info-item">
-                    <h4>♻️ Küchenreste nutzen</h4>
-                    <ul>
-                        <li><strong>Lauch/Frühlingszwiebeln:</strong> Wurzelende in Wasser → wächst nach!</li>
-                        <li><strong>Salatherzen:</strong> In Wasser → neue Blätter</li>
-                        <li><strong>Knoblauchzehe:</strong> Einpflanzen → Knoblauchgrün</li>
-                    </ul>
-                </div>
-                <div class="info-item">
-                    <h4>🪴 Container-Gärtnern</h4>
-                    <ul>
-                        <li>Töpfe, Eimer, Dosen - alles mit Ablauflöchern nutzbar</li>
-                        <li>Kartoffeln im Sack/Eimer: 30l pro Pflanze</li>
-                        <li>Balkon = vollwertiger Gemüsegarten möglich</li>
-                    </ul>
-                </div>
-                <div class="info-item">
-                    <h4>🌱 Saatgut sichern</h4>
-                    <ul>
-                        <li>Samenfeste Sorten (keine F1-Hybriden!)</li>
-                        <li>Tomaten, Bohnen, Erbsen: Samen einfach selbst gewinnen</li>
-                        <li>Trocken und kühl lagern (Jahre haltbar)</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-        <!-- Aussaatkalender -->
-        <div class="quick-reference">
-            <h3>📅 Aussaat-Kalender</h3>
-            <table class="reference-table">
-                <thead>
-                    <tr>
-                        <th>Gemüse</th>
-                        <th>Aussaat</th>
-                        <th>Ernte</th>
-                        <th>Dauer</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>🔴 Radieschen</td>
-                        <td>März-Sept</td>
-                        <td>3-4 Wochen später</td>
-                        <td>25-30 Tage</td>
-                    </tr>
-                    <tr>
-                        <td>🥬 Pflücksalat</td>
-                        <td>März-Aug</td>
-                        <td>4-6 Wochen später</td>
-                        <td>30-45 Tage</td>
-                    </tr>
-                    <tr>
-                        <td>🥬 Spinat</td>
-                        <td>März-April, Sept</td>
-                        <td>6-8 Wochen später</td>
-                        <td>45-60 Tage</td>
-                    </tr>
-                    <tr>
-                        <td>🥔 Kartoffeln</td>
-                        <td>April-Mai</td>
-                        <td>Juli-Sept</td>
-                        <td>70-120 Tage</td>
-                    </tr>
-                    <tr>
-                        <td>🫘 Bohnen</td>
-                        <td>Mai-Juni</td>
-                        <td>Juli-Okt</td>
-                        <td>60-90 Tage</td>
-                    </tr>
-                    <tr>
-                        <td>🥒 Zucchini</td>
-                        <td>Mai</td>
-                        <td>Juni-Okt</td>
-                        <td>50-60 Tage</td>
-                    </tr>
-                    <tr>
-                        <td>🍅 Tomaten</td>
-                        <td>März (drinnen)</td>
-                        <td>Juli-Okt</td>
-                        <td>90-120 Tage</td>
-                    </tr>
-                    <tr>
-                        <td>🥕 Möhren</td>
-                        <td>März-Juli</td>
-                        <td>Juni-Nov</td>
-                        <td>70-120 Tage</td>
-                    </tr>
-                    <tr>
-                        <td>🎃 Kürbis</td>
-                        <td>Mai</td>
-                        <td>Sept-Okt</td>
-                        <td>90-120 Tage</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-        </section>
-
-        <!-- Section 5: Nützliche Pflanzen -->
-        <section id="nuetzliche" class="content-section">
-            <h2>🧰 5. Nützliche Pflanzen</h2>
-            <p class="section-intro">Pflanzen für Werkzeuge, Fasern, Färben und andere praktische Anwendungen.</p>
-
-            <div style="text-align: center; padding: 2rem;">
-                <a href="../nuetzliche-pflanzen/" class="btn btn-primary" style="font-size: 1.2rem;">
-                    🧰 Zum Werkstatt-Ratgeber →
-                </a>
-                <p style="margin-top: 1rem; color: #666;">Fasern, Holz, Feuer, Hygiene, Kleber & Färben</p>
-            </div>
-        </section>
-
-        <!-- Section 6: Essbare Pilze -->
-        <section id="pilze" class="content-section">
-            <h2>🍄 6. Essbare Pilze</h2>
-            <p class="section-intro">Pilze sind eine hervorragende Nahrungsquelle, aber Vorsicht ist geboten. Sammle
-                nur, was du 100% kennst!</p>
-
-            <div class="plant-grid">
-                <!-- Steinpilz -->
-                <article class="plant-card">
-                    <div class="plant-image">
-                        <img src="../../assets/images/pilze/steinpilz.png" alt="Steinpilz - Boletus edulis"
-                            class="plant-photo">
-                    </div>
-                    <div class="plant-info">
-                        <h3>Steinpilz</h3>
-                        <p class="plant-latin">Boletus edulis</p>
-                        <div class="plant-details">
-                            <div class="plant-section">
-                                <h4>🔍 Erkennung</h4>
-                                <ul>
-                                    <li>Brauner, polsterartiger Hut</li>
-                                    <li>Weiße bis gelbgrüne Röhren (Schwamm)</li>
-                                    <li>Heller Tonnenstiel mit feinem weißen Netz</li>
-                                    <li>Fleisch weiß, verfärbt nicht</li>
-                                </ul>
-                            </div>
-                            <div class="plant-section">
-                                <h4>📍 Fundorte</h4>
-                                <p>Nadel- und Laubwälder (Fichten, Buchen). Juni bis Oktober.</p>
-                            </div>
-                        </div>
-                        <div class="plant-tags">
-                            <span class="tag tag-safe">Köstlich</span>
-                            <span class="tag tag-common">Beliebt</span>
-                        </div>
-                    </div>
-                </article>
-
-                <!-- Pfifferling -->
-                <article class="plant-card">
-                    <div class="plant-image">
-                        <img src="../../assets/images/pilze/pfifferling.png"
-                            alt="Echter Pfifferling - Cantharellus cibarius" class="plant-photo">
-                    </div>
-                    <div class="plant-info">
-                        <h3>Echter Pfifferling</h3>
-                        <p class="plant-latin">Cantharellus cibarius</p>
-                        <div class="plant-details">
-                            <div class="plant-section">
-                                <h4>🔍 Erkennung</h4>
-                                <ul>
-                                    <li>Eigelb- bis goldgelb</li>
-                                    <li>Trichterförmiger Hut, Rand wellig</li>
-                                    <li>Leisten (keine Lamellen!) laufen am Stiel herab</li>
-                                    <li>Duftet leicht nach Aprikose</li>
-                                </ul>
-                            </div>
-                            <div class="plant-section">
-                                <h4>📍 Fundorte</h4>
-                                <p>Bemooste Böden in Nadelwäldern. Juni bis November.</p>
-                            </div>
-                        </div>
-                        <div class="plant-tags">
-                            <span class="tag tag-safe">Sehr sicher</span>
-                            <span class="tag tag-common">Delikatesse</span>
-                        </div>
-                    </div>
-                </article>
-
-                <!-- Parasol -->
-                <article class="plant-card">
-                    <div class="plant-image">
-                        <img src="../../assets/images/pilze/parasol.png" alt="Parasol - Macrolepiota procera"
-                            class="plant-photo">
-                    </div>
-                    <div class="plant-info">
-                        <h3>Parasol (Riesenschirmling)</h3>
-                        <p class="plant-latin">Macrolepiota procera</p>
-                        <div class="plant-details">
-                            <div class="plant-section">
-                                <h4>🔍 Erkennung</h4>
-                                <ul>
-                                    <li>Großer Schirm (bis 30cm) mit Schuppen</li>
-                                    <li>Stiel genattert (wie Schlangenhaut)</li>
-                                    <li>Verschiebbarer Ring am Stiel</li>
-                                    <li>Geruch nussig</li>
-                                </ul>
-                            </div>
-                            <div class="plant-section">
-                                <h4>📍 Fundorte</h4>
-                                <p>Waldränder, Lichtungen, Wiesen. Juli bis November. Nur Hut essbar (wie Schnitzel
-                                    braten!).</p>
-                            </div>
-                        </div>
-                        <div class="plant-tags">
-                            <span class="tag tag-safe">Gut erkennbar</span>
-                            <span class="tag tag-common">Ergiebig</span>
-                        </div>
-                    </div>
-                </article>
-
-                <!-- Champignon -->
-                <article class="plant-card">
-                    <div class="plant-image">
-                        <img src="../../assets/images/pilze/champignon.png" alt="Wiesenchampignon - Agaricus campestris"
-                            class="plant-photo">
-                    </div>
-                    <div class="plant-info">
-                        <h3>Wiesenchampignon</h3>
-                        <p class="plant-latin">Agaricus campestris</p>
-                        <div class="plant-details">
-                            <div class="plant-section">
-                                <h4>🔍 Erkennung</h4>
-                                <ul>
-                                    <li>Hut weiß seidig</li>
-                                    <li>Lamellen erst rosa, dann schokobraun (NIE weiß!)</li>
-                                    <li>Hängender Ring, flüchtig</li>
-                                    <li>Angenehmer Pilzgeruch (nicht nach Karbol/Tinte!)</li>
-                                </ul>
-                            </div>
-                            <div class="plant-section">
-                                <h4>📍 Fundorte</h4>
-                                <p>Gedüngte Wiesen, Weiden. Mai bis Oktober.</p>
-                            </div>
-                        </div>
-                        <div class="plant-tags">
-                            <span class="tag tag-caution">Verwechslungsgefahr</span>
-                            <span class="tag tag-common">Häufig</span>
-                        </div>
-                    </div>
-                </article>
-            </div>
-
-            <!-- Section 7: Giftige Pflanzen -->
-            <section id="giftig" class="content-section">
-                <h2>☠️ 7. Giftige Pflanzen - LEBENSGEFAHR</h2>
-                <p class="section-intro">Diese Pflanzen können tödlich sein. Lerne sie unbedingt zu erkennen!</p>
-
-                <div class="poison-grid">
-                    <article class="poison-card">
-                        <img src="../../assets/images/giftig/schierling.png" alt="Gefleckter Schierling"
-                            class="plant-photo"
-                            style="width:100%; height:200px; object-fit:cover; border-radius:8px 8px 0 0; margin-bottom:1rem;">
-                        <div class="poison-danger-level danger-extreme">TÖDLICH</div>
-                        <h3>Gefleckter Schierling</h3>
-                        <p class="plant-latin">Conium maculatum</p>
-                        <div class="poison-details">
-                            <p><strong>Erkennung:</strong> Rot gefleckter Stängel, farnähnliche Blätter, unangenehmer
-                                Mäusegeruch</p>
-                            <p><strong>Verwechslung:</strong> Wilde Möhre, Petersilie</p>
-                            <p><strong>Wirkung:</strong> Lähmung, Atemstillstand</p>
-                        </div>
-                    </article>
-
-                    <article class="poison-card">
-                        <img src="../../assets/images/giftig/eisenhut.png" alt="Blauer Eisenhut" class="plant-photo"
-                            style="width:100%; height:200px; object-fit:cover; border-radius:8px 8px 0 0; margin-bottom:1rem;">
-                        <div class="poison-danger-level danger-extreme">TÖDLICH</div>
-                        <h3>Blauer Eisenhut</h3>
-                        <p class="plant-latin">Aconitum napellus</p>
-                        <div class="poison-details">
-                            <p><strong>Erkennung:</strong> Tiefblaue, helmförmige Blüten, handförmige Blätter</p>
-                            <p><strong>Gefahr:</strong> Gift wirkt auch über die Haut!</p>
-                            <p><strong>Wirkung:</strong> Herzstillstand innerhalb Stunden</p>
-                        </div>
-                    </article>
-
-                    <article class="poison-card">
-                        <img src="../../assets/images/giftig/tollkirsche.png" alt="Tollkirsche" class="plant-photo"
-                            style="width:100%; height:200px; object-fit:cover; border-radius:8px 8px 0 0; margin-bottom:1rem;">
-                        <div class="poison-danger-level danger-extreme">TÖDLICH</div>
-                        <h3>Tollkirsche</h3>
-                        <p class="plant-latin">Atropa belladonna</p>
-                        <div class="poison-details">
-                            <p><strong>Erkennung:</strong> Glänzend schwarze Beeren, kirschgroß, süßlich</p>
-                            <p><strong>Gefahr:</strong> 3-4 Beeren können Kinder töten</p>
-                            <p><strong>Wirkung:</strong> Halluzinationen, Herzrasen, Tod</p>
-                        </div>
-                    </article>
-
-                    <article class="poison-card">
-                        <img src="../../assets/images/giftig/fingerhut.png" alt="Roter Fingerhut" class="plant-photo"
-                            style="width:100%; height:200px; object-fit:cover; border-radius:8px 8px 0 0; margin-bottom:1rem;">
-                        <div class="poison-danger-level danger-high">SEHR GIFTIG</div>
-                        <h3>Fingerhut</h3>
-                        <p class="plant-latin">Digitalis purpurea</p>
-                        <div class="poison-details">
-                            <p><strong>Erkennung:</strong> Hohe Pflanze mit rosa/lila Glockenblüten</p>
-                            <p><strong>Gefahr:</strong> Alle Pflanzenteile giftig</p>
-                            <p><strong>Wirkung:</strong> Herzrhythmusstörungen</p>
-                        </div>
-                    </article>
-                </div>
-
-                <div class="emergency-box">
-                    <h3>🆘 Im Notfall: Vergiftung</h3>
-                    <ol>
-                        <li><strong>Ruhe bewahren</strong> - Panik verschlimmert die Situation</li>
-                        <li><strong>Pflanze sichern</strong> - Für Identifikation</li>
-                        <li><strong>KEIN Erbrechen auslösen</strong> - Kann Schaden vergrößern</li>
-                        <li><strong>Kohletabletten</strong> - Falls verfügbar (1g/kg Körpergewicht)</li>
-                        <li><strong>Viel Wasser trinken</strong> - Verdünnung</li>
-                        <li><strong>Giftnotruf:</strong> DE: 030-19240 | AT: 01-4064343 | CH: 145</li>
-                    </ol>
-                </div>
-            </section>
-
-            <!-- Navigation -->
-            <nav class="chapter-pagination">
-                <a href="../../index.html" class="prev-chapter">← Zur Übersicht</a>
-                <a href="tiere.html" class="next-chapter">Nächstes Kapitel: Tiere →</a>
-            </nav>
-
-            </div>
     </main>
 
-    <!-- Footer -->
     <footer class="chapter-footer">
         <div class="container">
-            <p>Europa Überlebens-Fibel | CC BY-NC-SA 4.0</p>
-            <p>⚠️ Alle Informationen ohne Gewähr. Professionellen Rat einholen.</p>
+            <p>Europa Überlebens-Fibel | 🌿 Heilpflanzen & Wildkräuter</p>
+            <p>⚠️ Bei Unsicherheit: NICHT essen oder verwenden!</p>
         </div>
     </footer>
 
-    <script src="../../js/countries-component.js"></script>
-    <script src="../../js/berries-component.js"></script>
     <script src="../../js/i18n.js"></script>
     <script src="../../js/navigation.js"></script>
 </body>
